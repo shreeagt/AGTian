@@ -39,57 +39,6 @@
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
         
     </head>
-
-    <style>
-             .drop-zone {
-    max-width: 300px;
-    height: 200px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
-    color: #fff;
-    border: 4px dashed #009578;
-    border-radius: 10px;
-  }
-  
-  .drop-zone--over {
-    border-style: solid;
-  }
-  
-  .drop-zone__input {
-    display: none;
-  }
-  
-  .drop-zone__thumb {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #cccccc;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .drop-zone__thumb::after {
-    content: attr(data-label);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px 0;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.75);
-    font-size: 14px;
-    text-align: center;
-  }
-  
-    </style>
     <body class="defult-home">
         
         <div class="offwrap"></div>
@@ -117,7 +66,7 @@
                             <div class="row-table">
                                 <div class="col-cell header-logo">                                  
                                     <div class="logo-area">
-                                        <a href="index.html">
+                                        <a href="index.php">
                                             <img class="normal-logo" src="assets/images/ajanta-light.png" alt="logo">  
                                             <img class="sticky-logo" src="assets/images/ajanta-logo.png" alt="logo">
                                         </a>
@@ -129,12 +78,12 @@
                                             <nav class="rs-menu hidden-md">
                                                 <ul class="nav-menu">
                                                     <li class="">
-                                                        <a href="index.html">Home</a>
+                                                        <a href="#home">Home</a>
                                                         <!-- <ul class="sub-menu">
                                                             <li class="menu-item-has-children current-menu-item">
                                                                 <a href="#">Multipages</a>
                                                                 <ul class="sub-menu">
-                                                                    <li><a href="index.html">Home One</a></li>
+                                                                    <li><a href="index.php">Home One</a></li>
                                                                     <li><a href="index2.html">Home Two</a></li>
                                                                     <li><a href="index3.html">Home Three</a></li>
                                                                     <li class="active"><a href="index4.html">Home Four</a></li>
@@ -154,10 +103,13 @@
                                                         </ul> -->
                                                     </li>
                                                     <li>
-                                                        <a href="#">How to play</a>
+                                                        <a href="#about">About</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#htp">How to play</a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="faq.html">FAQ's</a>
+                                                        <a href="#faq">FAQ's</a>
                                                         <!-- <ul class="sub-menu">
                                                             <li><a href="speaker1.html">Speaker One</a></li>
                                                             <li><a href="speaker2.html">Speaker Two</a></li>
@@ -184,7 +136,7 @@
                                                         </ul>
                                                     </li> -->
                                                     <li>
-                                                        <a href="#">Winner</a>
+                                                        <a href="winner.php">Winner</a>
                                                     </li>
                                                     <!-- <li>
                                                         <a href="contact.html">Contact</a>
@@ -198,7 +150,7 @@
                                     <div class="expand-btn-inner">
                                         <ul>
                                             <li class="btn-quote">
-                                                <a href="participate.html" class="quote-button">Participate</a>
+                                                <a href="participate.php" class="quote-button">Participate</a>
                                             </li>
                                             <li class="humburger">
                                                 <a id="nav-expander" class="nav-expander bar" href="#">
@@ -235,12 +187,12 @@
                         </div>
                         <ul class="nav-menu">
                             <li class="menu-item-has-children current-menu-item">
-                                <a href="#">Home</a>
+                                <a href="index.php">Home</a>
                                 <!-- <ul class="sub-menu">
                                     <li class="menu-item-has-children current-menu-item">
                                         <a href="#">Multipages</a>
                                         <ul class="sub-menu">
-                                            <li><a href="index.html">Home One</a></li>
+                                            <li><a href="index.php">Home One</a></li>
                                             <li><a href="index2.html">Home Two</a></li>
                                             <li><a href="index3.html">Home Three</a></li>
                                             <li><a href="index4.html">Home Four</a></li>
@@ -269,13 +221,15 @@
                                 <a href="#faq">FAQ's</a>
                             </li>
                             <li class="">
-                                <a href="winner.html">Winner</a>
+                                <a href="winner.php">Winner</a>
                             </li>
-                 
-                   
-                   
-                        </ul> <!-- //.nav-menu -->
+                            <li class="">
+                                <a href="participate.php">Participate</a>
+                            </li>
 
+           
+                        </ul> <!-- //.nav-menu -->
+                
                     </nav>
                     <!-- Canvas Menu end -->                     
                 </header>
@@ -284,12 +238,12 @@
             <!--Full width header End-->
 
             <!-- Banner Section Start -->
-            <div class="rs-breadcrumbs img1">
+            <div class="rs-breadcrumbs img2">
                 <div class="container">
                     <div class="breadcrumbs-inner">
                         <h1 class="page-title">
-                            Participate
-                            <span class="watermark">Participate</span>
+                            Winner
+                            <span class="watermark">Winner</span>
                         </h1>                       
                     </div>
                 </div>
@@ -641,57 +595,76 @@
 
             <!-- Pricing Section Start -->
 
-            <div class="rs-contact home-style1 home-style3 bg16 pt-120 md-pt-80 blue-bg2 ">
-
+            <!-- <div class="rs-contact home-style1 home-style3 bg16 pt-120 md-pt-80 blue-bg2 ">
+                <div class="sec-title mb-60 text-center ">
+                    <h2 class="title title2 title3 text-middle title4">
+                        Participate
+                    </h2>
+                </div>
                 <div class="container">
               
-                    <div class="rs-contact ">
-                        <div class="row justify-content-center ">
+          
+       
+                </div>
+          
+            </div> -->
 
-                            <div class="col-lg-6">
-                                <div class="contact-wrap mb-60">
-                                    <div id="form-messages"></div>
-                                    <form id="contact-form" method="post" action="" enctype="multipart/form-data">
-                                        <fieldset>
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
-                                                </div> 
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="empid" name="empid" placeholder="Employee I'd" required="">
-                                                </div>   
-                                        
-                                                <div class="col-lg-12 col-md-12 col-sm-12 mb-30">
-                                                    <input class="from-control" type="text" id="city" name="city" placeholder="City" required="">
-                                                </div>
-                                      
-                                          
-                                                <div class="col-lg-12 mb-30">
-                                                    <!-- <input class="from-control" type="file" id="myfile" name="myfile"  placeholder="Upload your video" > -->
-                                                    <div class="drop-zone">
-                                                        <input type="hidden" name="myfile" value="myfile">
-                                                        <input type="hidden" name="myfile" value="myfile">
-                                                           <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                                                           <input type="file" name="video_path" class="drop-zone__input">
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <div class="btn-part">                                            
-                                                <div class="form-group mb-0">
-                                                    <div class="submit-btn">
-                                                        <input class="submit" type="submit" value="Submit Now">
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </fieldset>
-                                    </form> 
+            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80">
+                <div class="container">
+                    <!-- <div class="sec-title text-center mb-60 md-mb-40">
+                        <h2 class="title pb-27">
+                           When the competition is over, the winner should be announced. 
+                        </h2>
+                        <div class="heading-border-line"></div>
+                    </div> -->
+                    <div class="row y-middle">
+                        <div class="col-lg-4 col-md-6 md-mb-30">
+                            <div class="services-item silver">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="assets/images/medals/silver.png" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">2. 1st Runner–up</h4>
+                                        <p class="services-txt">
+                                            When the competition is over, the 1st Runner-Up should be announced. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 md-mb-30">
+                            <div class="services-item gold">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="assets/images/medals/gold.png" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">1. Winner</h4>
+                                        <p class="services-txt">
+                                            When the competition is over, the winner should be announced. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="services-item bronze">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="assets/images/medals/bronze.png" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">3. 2nd Runner-Up</h4>
+                                        <p class="services-txt">
+                                            When the competition is over, the 2nd Runner-Up should be announced. 
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-       
                 </div>
-          
             </div>
             <!-- Pricing Section End -->
 
@@ -706,7 +679,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
                             <div class="footer-logo mb-40">
-                                <a href="index.html"><img src="assets/images/ajanta-light.png" alt=""></a>
+                                <a href="index.php"><img src="assets/images/ajanta-light.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-lg-8">
@@ -824,119 +797,5 @@
         <script src="assets/js/contact.form.js"></script>
         <!-- main js -->
         <script src="assets/js/main.js"></script>
-
-         
-      <script>
-        document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
-          const dropZoneElement = inputElement.closest(".drop-zone");
-        
-          dropZoneElement.addEventListener("click", (e) => {
-            inputElement.click();
-          });
-        
-          inputElement.addEventListener("change", (e) => {
-            if (inputElement.files.length) {
-              updateThumbnail(dropZoneElement, inputElement.files[0]);
-            }
-          });
-        
-          dropZoneElement.addEventListener("dragover", (e) => {
-            e.preventDefault();
-            dropZoneElement.classList.add("drop-zone--over");
-          });
-        
-          ["dragleave", "dragend"].forEach((type) => {
-            dropZoneElement.addEventListener(type, (e) => {
-              dropZoneElement.classList.remove("drop-zone--over");
-            });
-          });
-        
-          dropZoneElement.addEventListener("drop", (e) => {
-            e.preventDefault();
-        
-            if (e.dataTransfer.files.length) {
-              inputElement.files = e.dataTransfer.files;
-              updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
-            }
-        
-            dropZoneElement.classList.remove("drop-zone--over");
-          });
-        });
-        
-        
-        function updateThumbnail(dropZoneElement, file) {
-          let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
-        
-          
-          if (dropZoneElement.querySelector(".drop-zone__prompt")) {
-            dropZoneElement.querySelector(".drop-zone__prompt").remove();
-          }
-        
-          
-          if (!thumbnailElement) {
-            thumbnailElement = document.createElement("div");
-            thumbnailElement.classList.add("drop-zone__thumb");
-            dropZoneElement.appendChild(thumbnailElement);
-          }
-        
-          thumbnailElement.dataset.label = file.name;
-        
-          // Show thumbnail for image files
-          if (file.type.startsWith("image/")) {
-            const reader = new FileReader();
-        
-            reader.readAsDataURL(file);
-            reader.onload = () => {
-              thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
-            };
-          } else {
-            thumbnailElement.style.backgroundImage = null;
-          }
-        }
-              
-     </script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-       const form = document.querySelector('form');
-    //    const loaderCover = document.getElementById('loader_cover');
-       const videobg = document.getElementById('myVideo');
-       form.addEventListener('submit', (event) => {
-          event.preventDefault(); // Prevent the default form submission
- 
-          const fileInput = document.querySelector('.drop-zone__input');
-          const allowedExtensions = ['mp4', 'avi', 'mov']; // Allowed video file extensions
-          const maxSizeInBytes = 10 * 1024 * 1024; // 10MB
- 
-          const file = fileInput.files[0];
- 
-          // Check if a file is selected
-          if (!file) {
-             alert('Please select a file.');
-             return;
-          }
- 
-          // Check the file extension
-          const fileName = file.name;
-          const fileExtension = fileName.split('.').pop().toLowerCase();
-          if (!allowedExtensions.includes(fileExtension)) {
-             alert('Please select a valid video file.');
-             return;
-          }
- 
-          // Check the file size
-          if (file.size > maxSizeInBytes) {
-             alert('File size exceeds the limit of 10MB.');
-             return;
-          }
- 
-          // Show the loader
-        //   loaderCover.classList.remove('d-none');
-          videobg.classList.add('d-none')
-          // Submit the form
-          form.submit();
-       });
-    });
- </script>
     </body>
 </html>

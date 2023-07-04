@@ -14,29 +14,29 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png"> -->
         <!-- Bootstrap v4.4.1 css -->
-
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/bootstrap.min.css')}}">
         <!-- font-awesome css -->
         <!-- <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- flaticon css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/fonts/flaticon.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/cfonts/flaticon.css')}}">
         <!-- animate css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/animate.css')}}">
         <!-- owl.carousel css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/owl.carousel.css')}}">
         <!-- off canvas css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/off-canvas.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/off-canvas.css')}}">
         <!-- magnific popup css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/magnific-popup.css')}}">
         <!-- Main Menu css -->
-        <link rel="stylesheet" href="new/assets/css/rsmenu-main.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/rsmenu-main.css')}}">
         <!-- spacing css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/rs-spacing.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/rs-spacing.css')}}">
         <!-- style css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/style.css"> <!-- This stylesheet dynamically changed from style.less -->
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/style.css')}}"> <!-- This stylesheet dynamically changed from style.less -->
         <!-- responsive css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/responsive.css')}}">
         
     </head>
     <body class="defult-home">

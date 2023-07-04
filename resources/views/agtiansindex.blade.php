@@ -20,23 +20,23 @@
         <!-- <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- flaticon css -->
-        <link rel="stylesheet" type="text/css" href="new/assets/fonts/flaticon.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/cfonts/flaticon.css')}}">
         <!-- animate css -->
         <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/animate.css')}}">
         <!-- owl.carousel css -->
-        <link rel="stylesheet" type="text/css" href="new/assets/css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/owl.carousel.css')}}">
         <!-- off canvas css -->
-        <link rel="stylesheet" type="text/css" href="new/assets/css/off-canvas.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/off-canvas.css')}}">
         <!-- magnific popup css -->
-        <link rel="stylesheet" type="/text/css" href="new/assets/css/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/magnific-popup.css')}}">
         <!-- Main Menu css -->
-        <link rel="stylesheet" href="new/assets/css/rsmenu-main.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/rsmenu-main.css')}}">
         <!-- spacing css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/rs-spacing.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/rs-spacing.css')}}">
         <!-- style css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/style.css"> <!-- This stylesheet dynamically changed from style.less -->
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/style.css')}}"> <!-- This stylesheet dynamically changed from style.less -->
         <!-- responsive css -->
-        <link rel="stylesheet" type="new/text/css" href="new/assets/css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/responsive.css')}}">
         
     </head>
     <body class="defult-home">
@@ -1256,36 +1256,38 @@
             </div>
         </div>
         <!-- Search Modal End -->
-
+        
+        
         <!-- modernizr js -->
-        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <script src="{{asset('new/assets/js/modernizr-2.8.3.min.js')}}"></script>
         <!-- jquery latest version -->
-        <script src="new/assets/js/jquery.min.js"></script>
+        <script src="{{asset('new/assets/js/jquery.min.js')}}"></script>
         <!-- Bootstrap v4.4.1 js -->
-        <script src="new/assets/js/bootstrap.min.js"></script>
+        <script src="{{asset('new/assets/js/bootstrap.min.js')}}"></script>
         <!-- op nav js -->
-        <script src="new/assets/js/jquery.nav.js"></script>
+        <script src="{{asset('new/assets/js/jquery.nav.js')}}"></script>
         <!-- isotope.pkgd.min js -->
-        <script src="new/assets/js/isotope.pkgd.min.js"></script>
+        <script src="{{asset('new/assets/js/isotope.pkgd.min.js')}}"></script>
         <!-- owl.carousel js -->
-        <script src="new/assets/js/owl.carousel.min.js"></script>
+        <script src="{{asset('new/assets/js/owl.carousel.min.js')}}"></script>
         <!-- wow js -->
-        <script src="new/assets/js/wow.min.js"></script>
+        <script src="{{asset('new/assets/js/wow.min.js')}}"></script>
         <!-- Time Circle js -->
-        <script src="new/assets/js/time-circle.js"></script>
+        <script src="{{asset('new/assets/js/time-circle.js')}}"></script>
         <!-- Skill bar js -->
-        <script src="new/assets/js/skill.bars.jquery.js"></script>
+        <script src="{{asset('new/assets/js/skill.bars.jquery.js')}}"></script>
         <!-- imagesloaded js -->
-        <script src="new/assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="{{asset('new/assets/js/imagesloaded.pkgd.min.js')}}"></script>
          <!-- waypoints.min js -->
-        <script src="new/assets/js/waypoints.min.js"></script>
+        <script src="{{asset('new/assets/js/waypoints.min.js')}}"></script>
         <!-- counterup.min js -->
-        <script src="new/assets/js/jquery.counterup.min.js"></script> 
+        <script src="{{asset('new/assets/js/jquery.counterup.min.js')}}"></script> 
         <!-- magnific popup js -->
-        <script src="new/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="{{asset('new/assets/js/jquery.magnific-popup.min.js')}}"></script>
         <!-- contact form js -->
-        <script src="new/assets/js/contact.form.js"></script>
+        <script src="{{asset('new/assets/js/contact.form.js')}}"></script>
         <!-- main js -->
-        <script src="new/assets/js/main.js"></script>
+        <script src="{{asset('new/assets/js/main.js')}}"></script>
+
     </body>
 </html>

@@ -294,7 +294,7 @@ ul {
   background-size: cover;
 }
 .bg17 {
-  background-image: url('/assets/images/bg/about-bg4.jpg');
+  background-image: url('/new/assets/images/bg/about-bg4.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2448,10 +2448,10 @@ body .search-modal .close:hover {
   opacity: .7;
 }
 .rs-breadcrumbs.img1 {
-  background: url('/assets/images/breadcrumbs/inr-1.jpg');
+  background: url('/new/assets/images/breadcrumbs/inr-1.jpg');
 }
 .rs-breadcrumbs.img2 {
-  background: url('/assets/images/breadcrumbs/winner-banner.png');
+  background: url('/new/assets/images/breadcrumbs/winner-banner.png');
 }
 .rs-breadcrumbs.img3 {
   background: url(assets/images/breadcrumbs/inr-3.jpg);
@@ -2673,7 +2673,7 @@ body .search-modal .close:hover {
   transform: translateX(-50%) translateY(-50%);
 }
 .rs-banner.banner-home-style4 {
-  background-image: url('/assets/images/banner/home4.jpg');
+  background-image: url('/new/assets/images/banner/home4.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2996,7 +2996,7 @@ body .search-modal .close:hover {
 }
 .rs-videos.about-video {
   position: relative;
-  background-image: url('/assets/images/video/video.jpg');
+  background-image: url('/new/assets/images/video/video.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6946,7 +6946,7 @@ body .search-modal .close:hover {
     27. Footer Section CSS
 ------------------------------------*/
 .rs-footer.style1 {
-  background-image: url('/assets/images/bg/footer-bg.jpg');
+  background-image: url('/new/assets/images/bg/footer-bg.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

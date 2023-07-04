@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\SRMController;
 use App\Http\Controllers\DoctorsController;
+use App\Http\Controllers\Indexcontroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VideoController;
 
@@ -88,6 +89,13 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
         Route::get('/doctors/home/{doctor}', 'DoctorsController@link')->name('doctors.link');
         Route::post('/doctors/upload', 'DoctorsController@upload')->name('doctors.upload');
 });
+
+Route::get('/index', [Indexcontroller::class, 'index'])->name('index');
+Route::get('/participate',[Indexcontroller::class, 'participate'])->name('participate');
+Route::post('/insertvideo',[Indexcontroller::class, 'insertvideo'])->name('insertvideo');
+Route::get('/videostatus/{id}', [Indexcontroller::class, 'updatevideo'])->name('update');
+Route::get('/videosttatus/{id}', [Indexcontroller::class,'rject'])->name('reject');
+Route::get('/winner', [Indexcontroller::class, 'winner'])->name('winner');
 
 Route::get('/videoLis/{id}', [VideoController::class,'updatevideo'])->name('videoList.update');
 Route::get('/videoLiis/{id}', [VideoController::class,'rject'])->name('videoLiist.reject');

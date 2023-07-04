@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\VideoModel;
 use App\Models\Doctors;
+use App\Models\Index;
 use App\Models\User;
 use DB;
 use Auth;
@@ -19,8 +20,9 @@ class VideoController extends Controller
     public function index()
     { 
         if (Auth::user()->hasRole('admin') ) {
-            $doctor_details =DB::select('SELECT doctors.firstname,videos.doctor_instruction,doctors.city,doctors.lastname,doctors.soid,videos.video_path FROM videos INNER JOIN doctors ON videos.drid = doctors.id where videos.dr_video_status="Approved";'); 
-            $so_details=DB::select('select firstname,lastname,id from users');
+            // $doctor_details =DB::select('SELECT doctors.firstname,videos.doctor_instruction,doctors.city,doctors.lastname,doctors.soid,videos.video_path FROM videos INNER JOIN doctors ON videos.drid = doctors.id where videos.dr_video_status="Approved";'); 
+            // $so_details=DB::select('select firstname,lastname,id from users');
+            $video= Index::all();
             //dd($doctor_details);/* VideoModel::select('video.*',"video_user.firstname as videouserfirstname","video_user.lastname as videouserlastname","approvebyuser.firstname as approvebyuserfirstname","approvebyuser.lastname as approvebyuserlastname")->join('mapping_user', 'video.created_by', '=', 'mapping_user.user_id')->join('users as video_user', 'video.created_by', '=','video_user.id')->join('users as approvebyuser', 'video.created_by', '=','approvebyuser.id')->latest()->paginate(10);*/
            
         } elseif (Auth::user()->hasRole('so')) {
@@ -33,7 +35,7 @@ class VideoController extends Controller
         }
        
         if (Auth::user()->hasRole('admin') ) {
-            return view('video.index', compact('doctor_details','so_details'));
+            return view('video.index', ['video' => $video]);//compact('doctor_details','so_details'));
         } elseif (Auth::user()->hasRole('so')) {
             return view('video.index', compact('videos'));
         }

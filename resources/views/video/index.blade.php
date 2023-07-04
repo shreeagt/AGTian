@@ -82,9 +82,55 @@
                     @endif
                 </tbody>
             @else
-                <thead>
-
+                 <thead>
                     <tr>
+                        <th>Id</th>
+                        <th>So Name</th>
+                        <th>City</th>
+                        <th>Employee Id</th>
+                        <th>Video</th>
+                        <th>Video status</th>
+                    </tr> 
+                 </thead>
+                 <tbody>
+                    @foreach($video as $videoItem)
+                    <tr>
+                        <td>{{ $videoItem->id }}</td>
+                        <td>{{ $videoItem->name }}</td>
+                        <td>{{ $videoItem->city }}</td>
+                        <td>{{ $videoItem->empid }}</td>
+                        <td>
+                            @if ($videoItem->status == '')
+                                <a href="{{ route('update', $column_id = $videoItem->id) }}" class="btn btn-success">Approve</a>
+                                <a href="{{ route('reject', $column_id = $videoItem->id) }}" class="btn btn-danger">Reject</a>
+                            @else
+                                <a href="#" class="btn btn-secondary ">Approve</a>
+                                <a href="#" class="btn btn-secondary ">Reject</a>
+                            @endif
+                        </td>
+                        <td>
+                            @if ($videoItem->status == '')
+                                <a href="#" class="btn btn-warning">Pending</a>
+                            @elseif($videoItem->status == 'Approved')
+                                <a href="#" class="btn btn-primary">Approve</a>
+                            @else
+                                <a href="#" class="btn btn-dark">Rejected</a>
+                            @endif
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-info playbtn_video" id="playButton">Play</a>
+                            <div class="modal open_video">
+                                <div class="modal-content">
+                                    <span class="close close_video">&times;</span>
+                                    <video src="{{ asset('videos/gallery/' . $videoItem->video_path) }}" controls style="justify-content-center align-item-center"></video>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                @endforeach
+
+
+                  {{--  <tr>
                         <th>Id</th>
                         <th>So Name</th>
                         <th>Doctor Name</th>
@@ -129,7 +175,7 @@
                             </td>
                         </tr>
                     @endif
-                </tbody>
+                </tbody> --}}
             @endif
 
 

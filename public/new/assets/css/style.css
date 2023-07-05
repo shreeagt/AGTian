@@ -42,13 +42,14 @@
     30. Animation Part CSS      
 
 --------------------------------------------------------*/
-@charset "utf-8";
+/* @charset "utf-8"; */
 @font-face {
   font-family: 'Permanent Marker';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(http://fonts.gstatic.com/s/permanentmarker/v10/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf) format('truetype');
+  /* src: url('http://fonts.gstatic.com/s/permanentmarker/v10/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf') format('truetype'); */
+  src: url('/fonts/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf') format('truetype');
 }
 /* -----------------------------------
     01. General CSS

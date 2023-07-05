@@ -11,9 +11,7 @@ Route::get('/test', function() {
     return view('test');
 });
 
-Route::get('/thankyou', function() {
-    return view('thank');
-});
+Route::get('/thankyou', [Indexcontroller::class, 'thankyou'])->name('thankyou');
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   
@@ -30,7 +28,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         /** 
          * Login Routes
          */
-        Route::get('/', 'LoginController@show')->name('login.show');
+        Route::get('/login', 'LoginController@show')->name('login.show');
         Route::post('/login', 'LoginController@login')->name('login.perform');
 
     });
@@ -92,7 +90,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
         Route::post('/doctors/upload', 'DoctorsController@upload')->name('doctors.upload');
 });
 
-Route::get('/index', [Indexcontroller::class, 'index'])->name('index');
+Route::get('/', [Indexcontroller::class, 'index'])->name('index');
 Route::get('/participate',[Indexcontroller::class, 'participate'])->name('participate');
 Route::post('/insertvideo',[Indexcontroller::class, 'insertvideo'])->name('insertvideo');
 Route::get('/videostatus/{id}', [Indexcontroller::class, 'updatevideo'])->name('update');

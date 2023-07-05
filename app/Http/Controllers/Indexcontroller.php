@@ -41,7 +41,7 @@ class Indexcontroller extends Controller
 
     $ivideo->save();
 
-    return redirect()->route('participate')->with('success', 'Video uploaded successfully');
+    return redirect()->route('thankyou')->with('success', 'Video uploaded successfully');
 }
     public function updatevideo(request $id)
     {
@@ -59,5 +59,9 @@ class Indexcontroller extends Controller
     public function winner()
     {
         return view('winner');
+    }
+    public function thankyou()
+    {
+        return view('thank');
     }
 }

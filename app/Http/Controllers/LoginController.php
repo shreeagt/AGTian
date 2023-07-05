@@ -34,7 +34,7 @@ class LoginController extends Controller
         $credentials = $request->getCredentials();
        // dd($credentials);
         if(!Auth::validate($credentials)):
-            return redirect()->to('/')->withErrors(trans('auth.failed'));
+            return redirect()->to('/login')->withErrors(trans('auth.failed'));
         endif;
 
         $user = Auth::getProvider()->retrieveByCredentials($credentials);
@@ -59,7 +59,7 @@ class LoginController extends Controller
      */
     protected function authenticated(Request $request, $user) 
     {
-        return redirect()->intended();
+        return redirect()->route('home.index');
     }
 
 }

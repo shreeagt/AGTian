@@ -47,7 +47,7 @@
         <div id="pre-load">
            <div id="loader" class="loader">
                <div class="loader-container">
-                   <div class='loader-icon'><img src="new/assets/images/ajanta-logo.png" alt="agtian"></div>
+                   <div class='loader-icon'><img src="{{asset('new/assets/images/ajanta-logo.png')}}" alt="agtian"></div>
                </div>
            </div>              
        </div>
@@ -66,9 +66,10 @@
                             <div class="row-table">
                                 <div class="col-cell header-logo">                                  
                                     <div class="logo-area">
-                                        <a href="index.php">
-                                            <img class="normal-logo" src="new/assets/images/ajanta-light.png" alt="logo">  
-                                            <img class="sticky-logo" src="new/assets/images/ajanta-logo.png" alt="logo">
+                                        <a href="/">
+                                            {{-- <img class="normal-logo" src="new/assets/images/ajanta-light.png" alt="logo">   --}}
+                                            <img class="normal-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">  
+                                            <img class="sticky-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">
                                         </a>
                                     </div>
                                 </div>
@@ -78,29 +79,7 @@
                                             <nav class="rs-menu hidden-md">
                                                 <ul class="nav-menu">
                                                     <li class=" current-menu-item">
-                                                        <a href="#home">Home</a>
-                                                        <!-- <ul class="sub-menu">
-                                                            <li class="menu-item-has-children current-menu-item">
-                                                                <a href="#">Multipages</a>
-                                                                <ul class="sub-menu">
-                                                                    <li><a href="index.php">Home One</a></li>
-                                                                    <li><a href="index2.html">Home Two</a></li>
-                                                                    <li><a href="index3.html">Home Three</a></li>
-                                                                    <li class="active"><a href="index4.html">Home Four</a></li>
-                                                                    <li><a href="index5.html">Home Five</a></li>
-                                                                    <li><a href="index6.html">Home Six</a></li>
-                                                                </ul> 
-                                                            </li>
-                                                            <li class="menu-item-has-children">
-                                                                <a href="#">Onepages</a>
-                                                                <ul class="sub-menu">
-                                                                    <li><a href="onepage1.html">Onepage One</a></li>
-                                                                    <li><a href="onepage2.html">Onepage Two</a></li>
-                                                                    <li><a href="onepage3.html">Onepage Three</a></li>
-                                                                    <li><a href="onepage4.html">Onepage Four</a></li>
-                                                                </ul>  
-                                                            </li>
-                                                        </ul> -->
+                                                        <a href="#home">Home</a>                                                     
                                                     </li>
                                                     <li>
                                                         <a href="#about">About</a>
@@ -109,38 +88,11 @@
                                                         <a href="#htp">How to play</a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="#faq">FAQ's</a>
-                                                        <!-- <ul class="sub-menu">
-                                                            <li><a href="speaker1.html">Speaker One</a></li>
-                                                            <li><a href="speaker2.html">Speaker Two</a></li>
-                                                            <li><a href="speaker3.html">Speaker Three</a></li>
-                                                            <li><a href="speaker4.html">Speaker Four</a></li>
-                                                            <li><a href="speaker5.html">Speaker Five</a></li>
-                                                            <li><a href="speaker-single.html">Speaker Single</a></li>
-                                                        </ul> -->
+                                                        <a href="#faq">FAQ's</a>                                                   
                                                     </li>
-                                                    <!-- <li class="menu-item-has-children">
-                                                        <a href="#">Pages</a>                                                        
-                                                        <ul class="sub-menu">                                                          
-                                                            <li class="last-item menu-item-has-children">
-                                                                <a href="#">Schedule</a>
-                                                                <ul class="sub-menu">
-                                                                    <li><a href="schedule-light.html">Schedule Light</a> </li>
-                                                                    <li><a href="Schedule-dark.html">Schedule Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a href="gallery.html">Gallery</a></li>
-                                                            <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                                                            <li><a href="faqs.html">Faqs</a></li>
-                                                            <li><a href="Sponsors.html">Sponsors</a></li>
-                                                        </ul>
-                                                    </li> -->
                                                     <li>
-                                                        <a href="winner.php">Winner</a>
+                                                        <a href="{{route('winner')}}">Winner</a>
                                                     </li>
-                                                    <!-- <li>
-                                                        <a href="contact.html">Contact</a>
-                                                    </li> -->
                                                 </ul> <!-- //.nav-menu -->
                                             </nav>
                                         </div> <!-- //.main-menu -->
@@ -188,28 +140,7 @@
                         <ul class="nav-menu">
                             <li class="menu-item-has-children current-menu-item">
                                 <a href="#home">Home</a>
-                                <!-- <ul class="sub-menu">
-                                    <li class="menu-item-has-children current-menu-item">
-                                        <a href="#">Multipages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.php">Home One</a></li>
-                                            <li><a href="index2.html">Home Two</a></li>
-                                            <li><a href="index3.html">Home Three</a></li>
-                                            <li><a href="index4.html">Home Four</a></li>
-                                            <li><a href="index5.html">Home Five</a></li>
-                                            <li><a href="index6.html">Home Six</a></li>
-                                        </ul> 
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Onepages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="onepage1.html">Onepage One</a></li>
-                                            <li><a href="onepage2.html">Onepage Two</a></li>
-                                            <li><a href="onepage3.html">Onepage Three</a></li>
-                                            <li><a href="onepage4.html">Onepage Four</a></li>
-                                        </ul>  
-                                    </li>
-                                </ul> -->
+                             
                             </li>
                             <li>
                                 <a href="#about">About</a>
@@ -219,39 +150,16 @@
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">FAQ's</a>
-                                <!-- <ul class="sub-menu">
-                                    <li><a href="speaker1.html">Speaker One</a></li>
-                                    <li><a href="speaker2.html">Speaker Two</a></li>
-                                    <li><a href="speaker3.html">Speaker Three</a></li>
-                                    <li><a href="speaker4.html">Speaker Four</a></li>
-                                    <li><a href="speaker5.html">Speaker Five</a></li>
-                                    <li><a href="speaker-single.html">Speaker Single</a></li>
-                                </ul> -->
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">Pages</a>                                                        
-                                <ul class="sub-menu">                                                          
-                                    <li class="last-item menu-item-has-children">
-                                        <a href="#">Schedule</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="schedule-light.html">Schedule Light</a> </li>
-                                            <li><a href="Schedule-dark.html">Schedule Dark</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                                    <li><a href="faqs.html">Faqs</a></li>
-                                    <li><a href="Sponsors.html">Sponsors</a></li>
-                                </ul>
                             </li>
                             <li>
-                                <a href="blog.html">Blog</a>
+                                <a href="{{route('winner')}}">Winner</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="{{route('participate')}}">Participate</a>
                             </li>
+                
                         </ul> <!-- //.nav-menu -->
-                        <div class="canvas-contact">
+                        {{-- <div class="canvas-contact">
                               <div class="address-area">
                                   <div class="address-list">
                                       <div class="info-icon">
@@ -281,7 +189,7 @@
                                       </div>
                                   </div>
                               </div>
-                        </div>
+                        </div> --}}
                     </nav>
                     <!-- Canvas Menu end -->                     
                 </header>
@@ -293,10 +201,8 @@
             <div class="rs-banner banner-home-style4" id="home">
                 <div class="container">
                     <div class="content-wrap sec-title ">
-                        <!-- <div class="title-inner">
-                            <h2 class="title">18-20 Dec 2022 | New York</h2>
-                        </div> -->
-                        <h2 class="title title2 title3 text-middle title4">Showcase Your Talent and Win Big at</h2>
+
+                        <h2 class="title title2 title3 text-middle title4">Showcase Your Talent and win exciting prizes at</h2>
                         <h1 class="music wow fadeInDown">Ajanta</h1>
                         <h2 class="year wow fadeInLeft">Got Talent</h2>
                         <div class="event_counter2">
@@ -306,7 +212,7 @@
                                         <div class="timecounter-inner">
                                             <div class="coming-soon-part2">
                                                 <div class="coming-soon-text">    
-                                                    <div data-animation-in="slideInLeft" data-animation-out="animate-out fadeOut" class="CountDownTimer" data-date="11/11/2023 09:00"> </div>
+                                                    <div data-animation-in="slideInLeft" data-animation-out="animate-out fadeOut" class="CountDownTimer" data-date="07/07/2023 09:00"> </div>
                                                 </div>                                                        
                                             </div>
                                         </div>
@@ -323,10 +229,10 @@
             <div class="rs-about style2 bg17" id="about">
                 <div class="container">
                     <div class="left-side">
-                        <img class="wow fadeInLeft" src="new/assets/images/1.png" alt="Images">
+                        <img class="wow fadeInLeft" src="{{asset('new/assets/images/1.png')}}" alt="Images">
                     </div>
                     <div class="right-side">
-                        <img class="wow fadeInRight" src="new/assets/images/2.png" alt="Images">
+                        <img class="wow fadeInRight" src="{{asset('new/assets/images/2light.png')}}" alt="Images">
                     </div>
                     <div class="sec-title text-center mb-60">
                         <h2 class="title title2 title3 text-middle title4 pb-40">
@@ -348,641 +254,24 @@
             <!-- Team Section Start -->
             <div class="rs-team style8">
                 <div class="container">
-                    <!-- <div class="sec-title text-center mb-60">
-                        <h2 class="title title2 title3 text-middle title4">
-                            Special Performers
-                        </h2>
-                    </div> -->
-                    <!-- <div class="rs-carousel owl-carousel" 
-                        data-loop="true" 
-                        data-items="3" 
-                        data-margin="30" 
-                        data-autoplay="true" 
-                        data-hoverpause="true" 
-                        data-autoplay-timeout="5000" 
-                        data-smart-speed="800" 
-                        data-dots="true" 
-                        data-nav="false" 
-                        data-nav-speed="false" 
-
-                        data-md-device="3" 
-                        data-md-device-nav="false" 
-                        data-md-device-dots="true" 
-                        data-center-mode="false"
-
-                        data-ipad-device2="2" 
-                        data-ipad-device-nav2="false" 
-                        data-ipad-device-dots2="true"
-
-                        data-ipad-device="3" 
-                        data-ipad-device-nav="false" 
-                        data-ipad-device-dots="true" 
-
-                        data-mobile-device="1" 
-                        data-mobile-device-nav="false" 
-                        data-mobile-device-dots="true">
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/1.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Karan Johar</a></h3>
-                                    <div class="team-title">Musician</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/2.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Ranbir Kapoor</a></h3>
-                                    <div class="team-title">Singer</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/3.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Ajay Devgan</a></h3>
-                                    <div class="team-title">Singer</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/4.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Varun Dhawan</a></h3>
-                                    <div class="team-title">Music Director</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/5.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Seroun Pawor</a></h3>
-                                    <div class="team-title">Priyanka Chopra</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/6.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Sanjay Dutt</a></h3>
-                                    <div class="team-title">Singer</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/7.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Emraan Hashmi</a></h3>
-                                    <div class="team-title">Music</div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="team-item">
-                            <div class="team-inner-wrap">
-                                <div class="images-wrap">
-                                    <a href="speaker-single.html"><img src="assets/images/team/home4/8.jpg" alt="Team"></a>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                                 
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title-name"><a href="speaker-single.html">Rajinikanth</a></h3>
-                                    <div class="team-title">Singer</div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> -->
+                 
                 </div>
                 <div class="team-line">
                     <div class="line-animate left-side">
-                        <img class="wow fadeInLeft" src="new/assets/images/line/1.png" alt="Images">
+                        <img class="wow fadeInLeft" src="{{asset('new/assets/images/line/1.png')}}" alt="Images">
                     </div>
                     <div class="line-animate right-side">
-                        <img class="wow fadeInRight" src="new/assets/images/line/2.png" alt="Images">
+                        <img class="wow fadeInRight" src="{{asset('new/assets/images/line/2.png')}}" alt="Images">
                     </div>
                 </div>
             </div> 
 
-            <!-- Counter Start Here -->
-            <!-- <div class="rs-counter about-style home-style2 blue-bg2 pt-120 pb-120 md-pt-80 md-pb-80">
-                <div class="container">
-                    <div class="row">
-                       <div class="col-lg-3 col-md-6 col-sm-6 md-mb-30">
-                           <div class="counter-list">
-                               <div class="counter-icon">
-                                   <img src="assets/images/icons/1.png" alt="Counter">
-                               </div>
-                               <div class="counter-text plus">
-                                   <div class="rs-count">30</div>
-                                   <h4 class="title">Event Artists</h4>
-                               </div>
-                           </div>
-                       </div> 
-                       <div class="col-lg-3 col-md-6 col-sm-6 md-mb-30">
-                           <div class="counter-list">
-                               <div class="counter-icon">
-                                   <img src="assets/images/icons/2.png" alt="Counter">
-                               </div>
-                               <div class="counter-text plus">
-                                   <div class="rs-count">24</div>
-                                   <h4 class="title">Hours of Music</h4>
-                               </div>
-                           </div>
-                       </div> 
-                       <div class="col-lg-3 col-md-6 col-sm-6 xs-mb-30">
-                           <div class="counter-list">
-                               <div class="counter-icon">
-                                   <img src="assets/images/icons/3.png" alt="Counter">
-                               </div>
-                               <div class="counter-text plus">
-                                   <div class="rs-count">5</div>
-                                   <h4 class="title">Event Stages</h4>
-                               </div>
-                           </div>
-                       </div> 
-                       <div class="col-lg-3 col-md-6 col-sm-6">
-                           <div class="counter-list">
-                               <div class="counter-icon">
-                                   <img src="assets/images/icons/4.png" alt="Counter">
-                               </div>
-                               <div class="counter-text plus">
-                                   <div class="rs-count">12</div>
-                                   <h4 class="title">Music Bands</h4>
-                               </div>
-                           </div>
-                       </div> 
-                    </div>
-                </div>
-            </div> -->
-            <!-- Counter End Here -->
-
-            <!-- Our Event Schedule Start -->
-            <!-- <div id="rs-events-schedule" class="rs-events-schedule rs-events-schedule4 blue-bg3 pt-150 pb-120 md-pt-110 md-pb-80">
-                <div class="container">
-                    <div class="sec-title text-center mb-60">
-                        <h2 class="title title2 title3 text-middle title4">
-                            Event Schedule
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                           <div class="events-schedule-tabs">
-                              
-                                <ul class="nav eventday-list">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-bs-toggle="tab" href="#sunday">Day 1 <span>2022-03-13</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#monday">Day 2 <span>2022-03-14</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#tuesday">Day 3 <span>2022-03-14</span></a>
-                                    </li>
-                                </ul>
-                                <div class="events-schedule-contents tab-content schedule-one">
-                                    <div class="tab-pane events-shedule-des active show" id="sunday">
-                                        <div class="events-shedule-subitmes">
-                                            <table class="schedule-3">
-                                                <tbody>
-                                                    <tr> 
-                                                        <th>Time</th>                                                       
-                                                        <th>Bands</th>                                                                       
-                                                        <th>Artists</th>             
-                                                        <th>Stages</th>                   
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">10:00-12:00</td>
-                                                        <td>                                            
-                                                            Best of Club Hits                                            
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/1.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Salman Khan</span>
-                                                                </div>                                                   
-                                                            </div>                                      
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/2.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Natalie Portman</span>
-                                                                </div>                                                   
-                                                            </div>    
-                                                        </td>
-                                                        <td class="td__room_color">Main Stage</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">12:00-2:00</td>
-                                                        <td>                                            
-                                                            Live Pop Workout                                           
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/3.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Akshay Kumar</span>
-                                                                </div>                                                   
-                                                            </div>
-                                                        </td>
-                                                        <td class="td__room_color">Stage 2</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">2:00-3:00</td>
-                                                        <td>                                            
-                                                            Relaxing Classical                                          
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/4.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Aamir Khan</span>
-                                                                </div>                                                   
-                                                            </div>                                      
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/5.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Ranbir Kapoor</span>
-                                                                </div>                                                   
-                                                            </div>    
-                                                        </td>
-                                                        <td class="td__room_color">Stage 3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">3:00-5:00</td>
-                                                        <td>                                            
-                                                            Rock Stars Concert                                           
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/6.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Ajay Devgan</span>
-                                                                </div>                                                   
-                                                            </div> 
-                                                        </td>
-                                                        <td class="td__room_color">Stage 4</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane events-shedule-des" id="monday">
-                                        <div class="events-shedule-subitmes">
-                                            <table class="schedule-3">
-                                                <tbody>
-                                                    <tr> 
-                                                        <th>Time</th>                                                       
-                                                        <th>Bands</th>                                                                       
-                                                        <th>Artists</th>             
-                                                        <th>Stages</th>                   
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">10:00-12:00</td>
-                                                        <td>                                            
-                                                            Best Of Armin                                         
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/1.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Salman Khan</span>
-                                                                </div>                                                   
-                                                            </div>                                      
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/2.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Natalie Portman</span>
-                                                                </div>                                                   
-                                                            </div>    
-                                                        </td>
-                                                        <td class="td__room_color">Stage 1</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">12:00-1:00</td>
-                                                        <td>                                            
-                                                            Relaxing Classical                                        
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/3.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Akshay Kumar</span>
-                                                                </div>                                                   
-                                                            </div>
-                                                        </td>
-                                                        <td class="td__room_color">Stage 2</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">1:00-2:00</td>
-                                                        <td>                                            
-                                                            Band Festival                                        
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/4.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Aamir Khan</span>
-                                                                </div>                                                   
-                                                            </div>                                      
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/5.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Ranbir Kapoor</span>
-                                                                </div>                                                   
-                                                            </div>    
-                                                        </td>
-                                                        <td class="td__room_color">Stage 5</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane events-shedule-des" id="tuesday">
-                                        <div class="events-shedule-subitmes">
-                                            <table class="schedule-3">
-                                                <tbody>
-                                                    <tr> 
-                                                        <th>Time</th>                                                       
-                                                        <th>Bands</th>                                                                       
-                                                        <th>Artists</th>             
-                                                        <th>Stages</th>                   
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">10:00-12:00</td>
-                                                        <td>                                            
-                                                            Solo Performance                                          
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/1.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Salman Khan</span>
-                                                                </div>                                                   
-                                                            </div>                                      
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/2.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Natalie Portman</span>
-                                                                </div>                                                   
-                                                            </div>    
-                                                        </td>
-                                                        <td class="td__room_color">Stage 3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">12:00-1:00</td>
-                                                        <td>                                            
-                                                            Relaxing Classical                                        
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/3.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Akshay Kumar</span>
-                                                                </div>                                                   
-                                                            </div>
-                                                        </td>
-                                                        <td class="td__room_color">Stage 4</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="td__time_color">1:00-3:00</td>
-                                                        <td>                                            
-                                                            Alternative Hits                                     
-                                                        </td>
-                                                        <td class="speak-image-td">              
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/4.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Aamir Khan</span>
-                                                                </div>                                                   
-                                                            </div>                                      
-                                                            <div class="speak-image">
-                                                                <div class="tooltip"><a href="#"><img src="assets/images/tab/home4/5.jpg" alt="Images"></a>
-                                                                    <span class="tooltiptext">Ranbir Kapoor</span>
-                                                                </div>                                                   
-                                                            </div>    
-                                                        </td>
-                                                        <td class="td__room_color">Stage 1</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-line">
-                    <div class="line-animate right-side">
-                        <img class="wow fadeInRight" src="assets/images/team/home4/line/3.png" alt="Images">
-                    </div>
-                </div>
-            </div> -->
-            <!-- Our Event Schedule End -->
-
-            <!-- Our Sponsor Section Start -->
-            <!-- <div id="rs-our-sponsor" class="rs-our-sponsor style1 home4-sponsor-style bg18 pt-150 pb-120 md-pt-110 md-pb-80">
-                <div class="container">
-                    <div class="sec-title text-center mb-60">
-                        <h2 class="title title2 title3 text-middle title4">
-                            Event Sponsorship
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-6 mb-20">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/1.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6 mb-20">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/2.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6 mb-20">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/3.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6 mb-20">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/4.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6 md-mb-20">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/5.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6 md-mb-20">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/6.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/7.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6">
-                            <div class="logo-item">
-                                <div class="grid-figure">
-                                    <div class="logo-img">
-                                        <a href="https://reactheme.com"><img src="assets/images/event/sponsor/8.png" alt="logo-img"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Our Sponsor Section Start -->
-
-            <!-- Pricing Section Start -->
-
-            <!-- <div class="rs-contact home-style1 home-style3 bg16 pt-120 md-pt-80 blue-bg2 ">
-                <div class="sec-title mb-60 text-center ">
-                    <h2 class="title title2 title3 text-middle title4">
-                        Participate
-                    </h2>
-                </div>
-                <div class="container">
-         
-                    <div class="rs-contact ">
-                        <div class="row justify-content-center ">
-
-                            <div class="col-lg-6">
-                                <div class="contact-wrap mb-60">
-                                    <div id="form-messages"></div>
-                                    <form id="contact-form" method="post" action="mailer.php">
-                                        <fieldset>
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
-                                                </div> 
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="empid" name="empid" placeholder="Employ I'd" required="">
-                                                </div>   
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="designation" name="designation" placeholder="Designation" required="">
-                                                </div>   
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="division" name="division" placeholder="Division" required="">
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="city" name="city" placeholder="City" required="">
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                                    <input class="from-control" type="text" id="state" name="state" placeholder="state" required="">
-                                                </div>
-                                          
-                                                <div class="col-lg-12 mb-30">
-                                                    <input class="from-control" type="file" id="myfile" name="myfile"  placeholder="Upload your video" >
-                                                   
-                                                </div>
-                                            </div>
-                                            <div class="btn-part">                                            
-                                                <div class="form-group mb-0">
-                                                    <div class="submit-btn">
-                                                        <input class="submit" type="submit" value="Submit Now">
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </fieldset>
-                                    </form> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                </div>
-
-            </div> -->
-            <!-- Pricing Section End -->
+        
 
             <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80" id="htp">
                 <div class="container">
                     <div class="sec-title text-center mb-60 md-mb-40">
-                        <!-- <span class="sub-text">Join the Event</span> -->
+                    
                         <h2 class="title pb-27">
                            <!-- How to Play<br> -->
                            Play in AGTians: Unleash Your Talent
@@ -1169,59 +458,16 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
                             <div class="footer-logo mb-40">
-                                <a href="index.php"><img src="assets/images/ajanta-light.png" alt=""></a>
+                                <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="col-lg-8">
                             <div class="row">
-                                <div class="col-lg-4 col-md-12 col-sm-12 pl-45 md-pl-15">
-                                    <h3 class="footer-title">Address</h3>
-                                    <div class="textwidget">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ea.</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 pl-45 md-pl-15">
+                                    <h3 class="footer-title"></h3>
+                                    <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!<div>
                                 </div>
-                                <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10 pl-90 md-pl-15">
-                                    <h3 class="footer-title">Call Us</h3>
-                                    <div class="textwidget">
-                                        <a href="mailto:ajanta@ajanta.com">ajanta@ajanta.com</a><br>
-                                        <a href="tel:(+880)155-69569">9123456789</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-12 col-sm-12 pl-115 md-pl-15">
-                                    <h3 class="footer-title">Follow Us</h3>
-                                    <ul class="footer-social">  
-                                        <li> 
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li> 
-                                            <a href="#"><i class="fa fa-twitter"></i></a> 
-                                        </li>
-
-                                        <li> 
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        </li>
-
-                                        <li> 
-                                            <a href="#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">                    
-                    <div class="row y-middle">
-                        <!-- <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
-                            <ul class="copy-right-menu">
-                                <li><a href="index2.html">Home2</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="schedule.html">Schedule</a></li>
-                            </ul>
-                        </div> -->
-                        <div class="col-lg-6">
-                            <div class="copyright text-lg-start text-center ">
-                                <p>© 2023 Ajanta Got Talent. Developed By<a href="#"> Ajanta Pharma</a></p>
+                         
                             </div>
                         </div>
                     </div>

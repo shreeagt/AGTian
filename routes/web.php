@@ -11,7 +11,9 @@ Route::get('/test', function() {
     return view('test');
 });
 
-
+Route::get('/thankyou', function() {
+    return view('thank');
+});
 
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   

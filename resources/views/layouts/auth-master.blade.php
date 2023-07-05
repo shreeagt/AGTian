@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="auto parts, baby store, ecommerce, electronics, fashion, food, marketplace, modern, multi vendor, multipurpose, organic, responsive, shop, shopping, store">
-<meta name="description" content="Qrcode Scanner">
+<meta name="keywords" content="">
+<meta name="description" content="AGTIAN">
 <meta name="CreativeLayers" content="ATFN">
 <!-- css file -->
 <link rel="stylesheet" href="{{asset('theme/css/bootstrap.min.css')}}">
@@ -13,7 +13,7 @@
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="{{asset('theme/css/responsive.css')}}">
 <!-- Title -->
-<title>QrCode Scanner Project</title>
+<title>AGTIAN</title>
 <!-- Favicon -->
 <link href="/images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="/images/favicon.ico" sizes="128x128" rel="shortcut icon" />

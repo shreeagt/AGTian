@@ -49,7 +49,17 @@
         font-size: 20px;
     }  
 }
+
+@media only screen and (max-width:1280px){
+
+}
+
 @media only screen and (max-width: 1199px) {
+
+    .rs-team.style8 {
+        display: none;
+    }
+
     .lg-pl-pr-15,
     .lg-col-padding > [class*="col-"] {
         padding-right: 15px !important; 
@@ -241,7 +251,7 @@
         display: none;
     }
     .full-width-header .rs-header .menu-area .logo-area img {
-        max-height: 80px;
+        max-width: 80px;
     }
     .rs-addon-services.style1 .all-services-section .services-item {
         width: 50%;

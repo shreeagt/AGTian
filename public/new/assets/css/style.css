@@ -301,7 +301,7 @@ ul {
   padding: 148px 0px 100px 0px;
 }
 .bg18 {
-  background-image: url(assets/images/bg/sponsor-bg4.jpg);
+  background-image: url('/new/assets/images/bg/sponsor-bg4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1443,7 +1443,8 @@ blockquote cite:before {
 .full-width-header .rs-header .menu-area .logo-area img {
   transition: 0.4s;
   -webkit-transition: 0.4s;
-  max-height: 90px;
+  /* max-height: 90px; */
+  max-width: 120px;
 }
 .full-width-header .rs-header .menu-area .logo-area .dark {
   display: none;

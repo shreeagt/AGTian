@@ -242,11 +242,25 @@
                     </div>
                     <div class="rs-videos about-video">
                         <div class="animate-border">
-                            <a class="popup-border" href="https://www.youtube.com/watch?v=FMvA5fyZ338">
+                            {{-- <a class="popup-border" href="https://www.youtube.com/watch?v=FMvA5fyZ338"> --}}
+                            <a class="popup-border" href="{{asset('assets/videos/sample.mp4')}}">
                                 <i class="fa fa-play"></i>
                             </a>
                         </div>
                     </div>
+
+                    {{-- <div class="rs-videos about-video">
+                        <div class="animate-border">
+                            <video controls>
+                                <source src="{{asset('assets/videos/sample-5s.mp4')}}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <a class="popup-border" href="#">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                    </div> --}}
+                    
                 </div>
             </div>
             <!-- About Section End -->

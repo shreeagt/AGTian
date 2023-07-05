@@ -2998,7 +2998,7 @@ body .search-modal .close:hover {
 }
 .rs-videos.about-video {
   position: relative;
-  background-image: url('/new/assets/images/video/video.jpg');
+  background-image: url('/new/assets/images/video/rangoli.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6954,7 +6954,7 @@ body .search-modal .close:hover {
   background-size: cover;
 }
 .rs-footer.style1 .footer-top {
-  padding: 205px 0 95px;
+  padding: 100px 0 95px;
 }
 .rs-footer.style1 .footer-top .footer-logo img {
   height: 90px;

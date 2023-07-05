@@ -146,7 +146,7 @@
                                                     </li>
                                                  
                                                     <li>
-                                                        <a href="winner.php">Winner</a>
+                                                        <a href="{{route('winner')}}">Winner</a>
                                                     </li>
                                                     <!-- <li>
                                                         <a href="contact.html">Contact</a>
@@ -337,7 +337,7 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 pl-45 md-pl-15">
                                     <div class="col-lg-12 col-md-12 col-sm-12 pl-45 md-pl-15">
                                         <h3 class="footer-title"></h3>
-                                        <div class="textwidget">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus unde aperiam totam quos voluptas excepturi alias, aliquam perferendis ad porro.</div>
+                                        <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
                                     </div>
                                 </div>
                             </div>

@@ -85,7 +85,7 @@
                                                         <a href="#about">About</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#htp">How to play</a>
+                                                        <a href="#htp">How to Unroll</a>
                                                     </li>
                                                     <li class="">
                                                         <a href="#faq">FAQ's</a>                                                   
@@ -203,7 +203,7 @@
                     <div class="content-wrap sec-title ">
 
                         <h2 class="title title2 title3 text-middle title4">Showcase Your Talent and win exciting prizes at</h2>
-                        <h1 class="music wow fadeInDown">Ajanta</h1>
+                        <h1 class="music wow fadeInDown">Ajanta's</h1>
                         <h2 class="year wow fadeInLeft">Got Talent</h2>
                         <div class="event_counter2">
                             <div class="display-table">
@@ -372,7 +372,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card">
+                                        <!-- <div class="card">
                                             <div class="card-header">
                                                 <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">Can I submit a group performance?</a>
                                             </div>
@@ -381,7 +381,7 @@
                                                     Absolutely! Group performances are encouraged. Just make sure all participants are employees of the organization.
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="card">
                                             <div class="card-header">
                                                 <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">How long should my talent video be?</a>
@@ -448,7 +448,7 @@
                                             </div>
                                             <div id="collapseTen" class="collapse" data-bs-parent="#accordion" style="">
                                                 <div class="card-body">
-                                                    While we encourage participants to record their videos independently, seeking assistance from colleagues or friends for recording is allowed. The focus should remain on your talent and performance.
+                                                    While we encourage participants to record their videos independently, seeking assistance from colleagues or family members for recording is allowed. The focus should remain on your talent and performance.
                                                 </div>
                                             </div>
                                         </div> 
@@ -470,19 +470,16 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
-                            <div class="footer-logo mb-40">
+                        <div class="align-self-xxl-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
+                           
                                 <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
-                            </div>
+                            
                         </div>
                         <div class="col-lg-8">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 pl-45 md-pl-15">
-                                    <h3 class="footer-title"></h3>
-                                    <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!<div>
-                                </div>
-                         
-                            </div>
+                          
+                                  
+                                    <div class="textwidget">Be a part of our company's remarkable 50 years journey and<br> seize the opportunity to showcase your talent by participating in<br> this inspiring contest!<div>
+                               
                         </div>
                     </div>
                 </div>

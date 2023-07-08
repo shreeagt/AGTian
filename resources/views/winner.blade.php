@@ -252,14 +252,14 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
-                            <div class="footer-logo mb-40">
+                        <div class="align-self-xxl-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
+                           
                                 <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
-                            </div>
+                           
                         </div>
                         <div class="col-lg-8">
                             <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 pl-45 md-pl-15">
+                               
                                     {{-- <h3 class="footer-title">Address</h3> --}}
                                     <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
                                 </div>

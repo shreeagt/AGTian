@@ -65,7 +65,7 @@ body {
   overflow-x: hidden;
 }
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 p {
@@ -6969,7 +6969,7 @@ body .search-modal .close:hover {
   margin-bottom: 20px;
 }
 .rs-footer.style1 .footer-top .textwidget {
-  font-size: 15px;
+  font-size: 22px;
   line-height: 1.9;
   color: #ffffff;
 }
@@ -7558,3 +7558,10 @@ body .search-modal .close:hover {
     left: 100%;
   }
 }
+@media (max-width: 767px) {
+  .align-self-xxl-center {
+    text-align: right;
+    text-align: left;
+  }
+}
+

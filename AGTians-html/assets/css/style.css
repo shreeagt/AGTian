@@ -6967,7 +6967,7 @@ body .search-modal .close:hover {
   margin-bottom: 20px;
 }
 .rs-footer.style1 .footer-top .textwidget {
-  font-size: 15px;
+  font-size: 22px;
   line-height: 1.9;
   color: #ffffff;
 }
@@ -7556,3 +7556,4 @@ body .search-modal .close:hover {
     left: 100%;
   }
 }
+

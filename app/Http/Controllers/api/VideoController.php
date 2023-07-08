@@ -13,7 +13,7 @@ class VideoController extends Controller {
 
         // Check if the videos collection is empty
         if ($videos->isEmpty()) {
-            return response()->json(['message' => 'No videos found','status' => false], 404);
+            return response()->json(['message' => 'No video found','status' => false], 404);
         }
 
         // You can return a response with the videos data if needed

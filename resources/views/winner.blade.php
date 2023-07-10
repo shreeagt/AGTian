@@ -66,7 +66,7 @@
                             <div class="row-table">
                                 <div class="col-cell header-logo">                                  
                                     <div class="logo-area">
-                                        <a href="index.php">
+                                        <a href="/">
                                             <img class="normal-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">  
                                             <img class="sticky-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">
                                         </a>

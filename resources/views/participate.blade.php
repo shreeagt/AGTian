@@ -329,7 +329,7 @@
                     <div class="row">
                         <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
                            
-                                <a href="index.php"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
+                                <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
                             
                         </div>
                         <div class="col-lg-8">

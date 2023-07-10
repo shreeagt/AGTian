@@ -98,7 +98,8 @@
         <div id="pre-load">
            <div id="loader" class="loader">
                <div class="loader-container">
-                   <div class='loader-icon'><img src="{{asset('new/assets/images/ajanta-logo.png')}}" alt="agtian"></div>
+                   {{-- <div class='loader-icon'><img src="{{asset('new/assets/images/ajanta-logo.png')}}" alt="agtian"></div> --}}
+                   <div class='loader-icon'><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="agtian"></div>
                </div>
            </div>              
        </div>
@@ -138,7 +139,7 @@
                                                         <a href="{{route('index')}}/#about">About</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{route('index')}}/#htp">How to play</a>
+                                                        <a href="{{route('index')}}/#htp">How to enroll</a>
                                                     </li>
                                                     <li class="">
                                                         <a href="{{route('index')}}/#faq">FAQ's</a>
@@ -203,7 +204,7 @@
                                 <a href="{{route('index')}}/#about">About</a>
                             </li>
                             <li>
-                                <a href="{{route('index')}}/#htp">How to play</a>
+                                <a href="{{route('index')}}/#htp">How to enroll</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="{{route('index')}}/#faq">FAQ's</a>
@@ -326,7 +327,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="align-self-xxl-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
+                        <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
                            
                                 <a href="index.php"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
                             

@@ -483,7 +483,7 @@
       const form = document.querySelector('#contact-form');
       const fileInput = document.querySelector('.drop-zone__input');
       const allowedExtensions = ['mp4', 'avi', 'mov']; // Allowed video file extensions
-      const maxSizeInBytes = 10 * 1024 * 1024; // 10MB
+      const maxSizeInBytes = 100 * 1024 * 1024; // 100MB
   
       form.addEventListener('submit', (event) => {
         event.preventDefault(); // Prevent the default form submission
@@ -506,7 +506,7 @@
   
         // Check the file size
         if (file.size > maxSizeInBytes) {
-          alert('File size exceeds the limit of 10MB.');
+          alert('File size exceeds the limit of 100MB.');
           return;
         }
   

@@ -51,6 +51,12 @@
   /* src: url('http://fonts.gstatic.com/s/permanentmarker/v10/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf') format('truetype'); */
   src: url('/fonts/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf') format('truetype');
 }
+
+
+@font-face {
+  font-family: 'ZapfChancery-Bold';
+  src: url('/assets/fonts/ZapfChancery-Bold.otf') format('opentype');
+}
 /* -----------------------------------
     01. General CSS
 -------------------------------------*/
@@ -2707,6 +2713,7 @@ body .search-modal .close:hover {
   margin: 0px 0px 15px 0px;
   font-family: "Permanent Marker", Sans-serif !important;
 }
+
 .rs-banner.banner-home-style4 .content-wrap .year {
   font-size: 90px;
   font-weight: 700;
@@ -7158,12 +7165,12 @@ body .search-modal .close:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
+  width: 200px;
   text-align: center;
 }
 .loader .loader-icon img {
   animation: loaderpulse alternate 900ms infinite;
-  width: 100px;
+  width: 200px;
 }
 .woocommerce .quantity input[type="number"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */

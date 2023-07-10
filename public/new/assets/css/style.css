@@ -2407,7 +2407,7 @@ body .search-modal .close:hover {
 }
 .rs-breadcrumbs .breadcrumbs-inner .page-title .watermark {
   position: absolute;
-  font-size: 120px;
+  font-size: 95px;
   text-transform: uppercase;
   font-weight: 900;
   font-family: poppins, sans-serif;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 /**  
 * -----------------------------------------------------------------------------
 *
@@ -1327,7 +1328,8 @@ blockquote cite:before {
   transform: translateX(-50%);
 }
 .sec-title .title.title2.title3.title4 {
-  font-family: "Permanent Marker", Sans-serif;
+  /* font-family: "Permanent Marker", Sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
 }
 .sec-title .title.title3 {
@@ -2704,23 +2706,28 @@ body .search-modal .close:hover {
   color: #FFFBFB;
 }
 .rs-banner.banner-home-style4 .content-wrap .music {
-  font-size: 170px;
+  /* font-size: 170px; */
+  font-size: 150px;
   line-height: 1.3;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 10px;
   color: #ffffff;
   margin: 0px 0px 15px 0px;
-  font-family: "Permanent Marker", Sans-serif !important;
+  /* font-family: "Permanent Marker", Sans-serif !important; */
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .rs-banner.banner-home-style4 .content-wrap .year {
-  font-size: 90px;
+  /* font-size: 90px; */
+  font-size: 80px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #ffffff;
-  font-family: "Permanent Marker", sans-serif !important;
+  /* font-family: "Permanent Marker", sans-serif !important; */
+  font-family: 'Montserrat', sans-serif;
   margin: 0px 0px 15px 0px;
 }
 .rs-banner.banner-home-style4 .content-wrap .event_counter2 .coming-soon-part2 {

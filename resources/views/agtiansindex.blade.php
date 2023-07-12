@@ -478,7 +478,7 @@
                         <div class="col-lg-8">
                           
                                   
-                                    <div class="textwidget">Be a part of our company's remarkable 50 years journey and<br> seize the opportunity to showcase your talent by participating in<br> this inspiring contest!<div>
+                                    <div class="textwidget">Be a part of our company's remarkable 50 years journey and seize the opportunity to showcase your talent by participating in this inspiring contest!<div>
                                
                         </div>
                     </div>

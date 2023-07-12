@@ -271,7 +271,6 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="contact-wrap mb-60">
-                                <div id="form-messages"></div>
                                 <form id="contact-form" method="post" action="{{route('insertvideo')}}" enctype="multipart/form-data">
                                 @csrf
                                 <fieldset>
@@ -286,9 +285,7 @@
                                         <input class="form-control" type="text" id="city" name="city" placeholder="City" required="">
                                     </div>
                                     <div class="col-lg-12 mb-30">
-                                    
                                         <div class="drop-zone">
-                                        <input type="hidden" name="myfile" value="myfile">
                                         <input type="hidden" name="myfile" value="myfile">
                                         <span class="drop-zone__prompt">Drop file here or click to upload</span>
                                         <input type="file" name="video_path" class="drop-zone__input">
@@ -328,17 +325,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-sm-right">
-                           
                                 <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
-                            
                         </div>
                         <div class="col-lg-8">
-
                             <div class="row">
-                               
-                                        <h3 class="footer-title"></h3>
-                                        <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
-                                    
+                                <h3 class="footer-title"></h3>
+                                <div class="textwidget">Be a part of our company's remarkable 50 years journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
                                 </div>
                             </div>
                         </div>
@@ -355,26 +347,6 @@
         </div>
         <!-- End scrollUp  -->
 
-
-        <!-- Search Modal Start -->
-        <div class="modal fade search-modal" id="searchModal" tabindex="-1">
-            <button type="button" class="close" data-bs-dismiss="modal">
-                <span class="flaticon-cross"></span>
-            </button>
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="search-block clearfix">
-                        <form>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Search Here..." type="text">
-                                <button type="submit" value="Search"><i class="flaticon-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Search Modal End -->
 
         <!-- modernizr js -->
         <script src="new/assets/js/modernizr-2.8.3.min.js"></script>

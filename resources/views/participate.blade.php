@@ -327,7 +327,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
+                        <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-sm-right">
                            
                                 <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
                             

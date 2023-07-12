@@ -191,12 +191,25 @@
         -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
+
+    .text-sm-right{
+        text-align: right;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     .hidden-md {
         display: none !important;
     }
+
+    .rs-about.style2 .left-side {
+        position: absolute;
+        width: 284px;
+        max-width: 348px;
+        top: 19px;
+        left: 1%;
+    }
+
     .home-blue .swiper-container .swiper-slide .height-ctrl {
         height: auto;
         display: block;
@@ -248,7 +261,7 @@
     .rs-pricing.style2 .price-animation .price-animate,
     .full-width-header .rs-header.header-style3 #rs_click__id,
     .full-width-header .rs-header .expand-btn-inner ul .btn-quote .quote-button {
-        display: none;
+        /* display: none; */
     }
     .full-width-header .rs-header .menu-area .logo-area img {
         max-width: 80px;
@@ -870,6 +883,10 @@
     }
     .rs-contact.home-style3 .map-canvas .address-main .address-box {
         padding: 35px 30px 50px 48px;
+    }
+
+    .rs-videos.about-video {
+        background-size: contain;
     }
 }
 .rs-team.style1 .team-item .team-inner-wrap .images-wrap .team-content {

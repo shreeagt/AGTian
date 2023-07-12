@@ -232,7 +232,7 @@
                         <img class="wow fadeInLeft" src="{{asset('new/assets/images/1.png')}}" alt="Images">
                     </div>
                     <div class="right-side">
-                        <img class="wow fadeInRight" src="{{asset('new/assets/images/2light.png')}}" alt="Images">
+                        <img class="wow fadeInRight d-none d-md-block" src="{{asset('new/assets/images/2light.png')}}"  alt="Images">
                     </div>
                     <div class="sec-title text-center mb-60">
                         <h2 class="title title2 title3 text-middle title4 pb-40">
@@ -470,7 +470,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
+                        <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-sm-right">
                            
                                 <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
                             

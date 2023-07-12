@@ -200,9 +200,9 @@
                                         <img src="{{asset('new/assets/images/medals/silver.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">2. 1st Runner–up</h4>
+                                        <h4 class="title">1st two Runner up </h4>
                                         <p class="services-txt">
-                                            When the competition is over, the 1st Runner-Up should be announced. 
+                                            30 Gram silver coin 
                                         </p>
                                     </div>
                                 </div>
@@ -215,9 +215,9 @@
                                         <img src="{{asset('new/assets/images/medals/gold.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">1. Winner</h4>
+                                        <h4 class="title">1st Winner </h4>
                                         <p class="services-txt">
-                                            When the competition is over, the winner should be announced. 
+                                            50 gram Silver coin 
                                         </p>
                                     </div>
                                 </div>
@@ -230,9 +230,9 @@
                                         <img src="{{asset('new/assets/images/medals/bronze.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">3. 2nd Runner-Up</h4>
+                                        <h4 class="title">2nd Three Runner up </h4>
                                         <p class="services-txt">
-                                            When the competition is over, the 2nd Runner-Up should be announced. 
+                                            20 Gram silver coin
                                         </p>
                                     </div>
                                 </div>
@@ -261,7 +261,7 @@
                             <div class="row">
                                
                                     {{-- <h3 class="footer-title">Address</h3> --}}
-                                    <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
+                                    <div class="textwidget">Be a part of our company's remarkable 50 years journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
                                 </div>
 
 

@@ -2461,8 +2461,17 @@ body .search-modal .close:hover {
   background: url('/new/assets/images/breadcrumbs/inr-1.jpg');
 }
 .rs-breadcrumbs.img2 {
-  background: url('/new/assets/images/breadcrumbs/winner-banner.png');
+  /* background: url('/new/assets/images/breadcrumbs/winner-banner.png'); */
+  background: none;
+  width: 100vw;
+  height: 100vh;
 }
+.img2 img {
+  width: 100%;
+  max-width: initial;
+  position: absolute;
+}
+
 .rs-breadcrumbs.img3 {
   background: url(assets/images/breadcrumbs/inr-3.jpg);
 }

@@ -53,6 +53,120 @@
        </div>
         <!--Preloader area end here-->
      
+        <div class="main-content">
+
+            <!--Full width header Start-->
+            <div class="full-width-header">
+                <!--Header Start-->
+                <header id="rs-header" class="rs-header header-transparent">
+                    <!-- Menu Start -->
+                    <div class="menu-area menu-sticky">
+                        <div class="container">
+                            <div class="row-table">
+                                <div class="col-cell header-logo">                                  
+                                    <div class="logo-area">
+                                        <a href="/">
+                                            {{-- <img class="normal-logo" src="new/assets/images/ajanta-light.png" alt="logo">   --}}
+                                            <img class="normal-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">  
+                                            <img class="sticky-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-cell">
+                                    <div class="rs-menu-area">
+                                        <div class="main-menu">
+                                            <nav class="rs-menu hidden-md">
+                                                <ul class="nav-menu">
+                                                    <li class="">
+                                                        <a href="#home">Home</a>                                                     
+                                                    </li>
+                                                    <li>
+                                                        <a href="#about">About</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#htp">How to enroll</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#faq">FAQ's</a>                                                   
+                                                    </li>
+                                                    <li class=" current-menu-item">
+                                                        <a href="{{route('winner')}}">Winner</a>
+                                                    </li>
+                                                </ul> <!-- //.nav-menu -->
+                                            </nav>
+                                        </div> <!-- //.main-menu -->
+                                    </div>
+                                </div>
+                                <div class="col-cell">
+                                    <div class="expand-btn-inner">
+                                        <ul>
+                                            <li class="btn-quote">
+                                                <a href="{{route( 'participate' )}}" class="quote-button">Participate</a>
+                                            </li>
+                                            <li class="humburger">
+                                                <a id="nav-expander" class="nav-expander bar" href="#">
+                                                    <div class="bar">
+                                                        <span class="dot1"></span>
+                                                        <span class="dot2"></span>
+                                                        <span class="dot3"></span>
+                                                        <span class="dot4"></span>
+                                                        <span class="dot5"></span>
+                                                        <span class="dot6"></span>
+                                                        <span class="dot7"></span>
+                                                        <span class="dot8"></span>
+                                                        <span class="dot9"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu End -->
+
+                    <!-- Canvas Mobile Menu start -->
+                    <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                        <div class="close-btn">
+                            <a id="nav-close2" class="nav-close">
+                                <div class="line">
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="nav-menu">
+                            <li class="menu-item-has-children current-menu-item">
+                                <a href="#home">Home</a>
+                             
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#htp">How to enroll</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#faq">FAQ's</a>
+                            </li>
+                            <li class="current-menu-item">
+                                <a href="{{route('winner')}}">Winner</a>
+                            </li>
+                            <li>
+                                <a href="{{route('participate')}}">Participate</a>
+                            </li>
+                
+                        </ul> <!-- //.nav-menu -->
+                    
+                    </nav>
+                    <!-- Canvas Menu end -->                     
+                </header>
+                <!--Header End-->
+            </div>
+            <!--Full width header End-->
+
+
 		<!-- Main content Start -->
         <div class="main-content">
 
@@ -172,6 +286,8 @@
 
             <!-- Banner Section Start -->
             <div class="rs-breadcrumbs img2">
+                <img src="{{asset('new/assets/images/breadcrumbs/winner-banner.jpg')}}" class="d-none d-lg-block" alt="Services">
+                <img src="{{asset('new/assets/images/breadcrumbs/mob-banner-winner.jpg')}}" class="d-block d-lg-none" alt="Services">
                 <div class="container">
                     <div class="breadcrumbs-inner">
                         <h1 class="page-title">
@@ -189,7 +305,7 @@
 
     
 
-            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80">
+            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 d-none d-md-block">
                 <div class="container">
         
                     <div class="row y-middle">
@@ -223,6 +339,63 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="services-item bronze">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/bronze.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">2nd Three Runner up </h4>
+                                        <p class="services-txt">
+                                            20 Gram silver coin
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 d-block d-md-none">
+                <div class="container">
+        
+                    <div class="row y-middle">
+
+                        <div class="col-lg-4 col-md-6 md-mb-30">
+                            <div class="services-item gold">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/gold.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">1st Winner </h4>
+                                        <p class="services-txt">
+                                            50 gram Silver coin 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 md-mb-30">
+                            <div class="services-item silver">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/silver.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">1st two Runner up </h4>
+                                        <p class="services-txt">
+                                            30 Gram silver coin 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-lg-4 col-md-6">
                             <div class="services-item bronze">
                                 <div class="services-wrap">

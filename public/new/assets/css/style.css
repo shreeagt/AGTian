@@ -2688,6 +2688,12 @@ body .search-modal .close:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.rs-banner.banner-home-style4.winner {
+  background-image: url('/new/assets/images/breadcrumbs/winner-banner.png');
+  background-size: contain;
+}
+
 .rs-banner.banner-home-style4 .content-wrap {
   padding: 232px 0 210px;
   position: relative;
@@ -3012,10 +3018,12 @@ body .search-modal .close:hover {
 }
 .rs-videos.about-video {
   position: relative;
-  background-image: url('/new/assets/images/video/rangoli.jpg');
+  /* background-image: url('/new/assets/images/video/rangoli.jpg'); */
+  background-image: url('/new/assets/images/video/rangoli.png');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: contain;
   border-radius: 10px 10px 10px 10px;
   text-align: center;
   margin: 0px 130px -370px 130px;

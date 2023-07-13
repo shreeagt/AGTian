@@ -149,7 +149,7 @@
                                 <a href="#htp">How to enroll</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#">FAQ's</a>
+                                <a href="#faq">FAQ's</a>
                             </li>
                             <li>
                                 <a href="{{route('winner')}}">Winner</a>

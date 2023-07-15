@@ -317,7 +317,7 @@
                                     <div class="services-text">
                                         <h4 class="title">2. Captivate the Judges</h4>
                                         <p class="services-txt">
-                                            Prepare a captivating performance that highlights your unique talent. Whether it's singing, dancing, comedy, or any other skill, give it your all! Keep your video within 5 minutes.
+                                            Prepare a captivating performance that highlights your unique talent. Whether it's singing, dancing, comedy, or any other skill, give it your all! Keep your video within 2 minutes.
                                         </p>
                                     </div>
                                 </div>

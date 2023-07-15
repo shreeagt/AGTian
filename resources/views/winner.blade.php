@@ -286,16 +286,19 @@
 
             <!-- Banner Section Start -->
             <div class="rs-breadcrumbs img2">
-                <img src="{{asset('new/assets/images/breadcrumbs/winner-banner.jpg')}}" class="d-none d-lg-block" alt="Services">
-                <img src="{{asset('new/assets/images/breadcrumbs/mob-banner-winner.jpg')}}" class="d-block d-lg-none" alt="Services">
-                <div class="container">
+            <div class="img d-none d-md-none d-lg-flex">
+                <img src="{{asset('new/assets/images/breadcrumbs/winner-prize.png')}}" class="" alt="Services">
+            </div>
+                <img src="{{asset('new/assets/images/breadcrumbs/mob-banner-winner.jpg')}}" class="d-block d-md-none d-lg-none img" alt="Services">
+                <img src="{{asset('new/assets/images/breadcrumbs/mobile-prize-tab.jpg')}}" class="d-none d-md-block d-lg-none img" alt="Services">
+                {{-- <div class="container">
                     <div class="breadcrumbs-inner">
-                        <h1 class="page-title">
-                            Winner
+                        <h3 class="text-white" style="position: relative">
+                            Shimmering Stars: Unveiling AGTian's Magnificent Top 30 Winners with Silver Treasures Await!
                             <span class="watermark">Winner</span>
-                        </h1>                       
+                        </h3>                       
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!-- Banner Section End -->
            

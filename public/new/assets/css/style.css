@@ -2466,10 +2466,17 @@ body .search-modal .close:hover {
   width: 100vw;
   height: 100vh;
 }
-.img2 img {
+.img2 .img {
   width: 100%;
+  height: 100%;
   max-width: initial;
   position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size:cover;
+  background: url('/new/assets/images/breadcrumbs/winner-background.jpg');
 }
 
 .rs-breadcrumbs.img3 {
@@ -5473,6 +5480,12 @@ body .search-modal .close:hover {
   margin-right: 20px;
   opacity: 0.3;
 }
+
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+
 .rs-newsletter.style1 .newsletter-wrap .content-wrap .newsletter-title {
   font-size: 36px;
   line-height: 40px;

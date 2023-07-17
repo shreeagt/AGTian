@@ -45,7 +45,7 @@ class Indexcontroller extends Controller
     Storage::disk('s3')->put($filePath, file_get_contents($request->file('video_path')));
 
     // Set the video path to the S3 URL
-    $videoPath = env('AWS_URL').'/'.'/'.$filePath;
+    $videoPath = env('AWS_URL').'/'.$filePath;
     $ivideo->video_path = $videoPath;
 
     // Save the video to the database

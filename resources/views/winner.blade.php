@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png"> -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('new/assets/images/ajantaone-logo.png')}}">  
         <!-- Bootstrap v4.4.1 css -->
         
         <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/bootstrap.min.css')}}">
@@ -47,12 +47,126 @@
         <div id="pre-load">
            <div id="loader" class="loader">
                <div class="loader-container">
-                   <div class='loader-icon'><img src="{{asset('new/assets/images/ajanta-logo.png')}}" alt="agtian"></div>
+                   <div class='loader-icon'><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="agtian"></div>
                </div>
            </div>              
        </div>
         <!--Preloader area end here-->
      
+        <div class="main-content">
+
+            <!--Full width header Start-->
+            <div class="full-width-header">
+                <!--Header Start-->
+                <header id="rs-header" class="rs-header header-transparent">
+                    <!-- Menu Start -->
+                    <div class="menu-area menu-sticky">
+                        <div class="container">
+                            <div class="row-table">
+                                <div class="col-cell header-logo">                                  
+                                    <div class="logo-area">
+                                        <a href="/">
+                                            {{-- <img class="normal-logo" src="new/assets/images/ajanta-light.png" alt="logo">   --}}
+                                            <img class="normal-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">  
+                                            <img class="sticky-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-cell">
+                                    <div class="rs-menu-area">
+                                        <div class="main-menu">
+                                            <nav class="rs-menu hidden-md">
+                                                <ul class="nav-menu">
+                                                    <li class="">
+                                                        <a href="#home">Home</a>                                                     
+                                                    </li>
+                                                    <li>
+                                                        <a href="#about">About</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#htp">How to enroll</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#faq">FAQ's</a>                                                   
+                                                    </li>
+                                                    <li class=" current-menu-item">
+                                                        <a href="{{route('winner')}}">Winner</a>
+                                                    </li>
+                                                </ul> <!-- //.nav-menu -->
+                                            </nav>
+                                        </div> <!-- //.main-menu -->
+                                    </div>
+                                </div>
+                                <div class="col-cell">
+                                    <div class="expand-btn-inner">
+                                        <ul>
+                                            <li class="btn-quote">
+                                                <a href="{{route( 'participate' )}}" class="quote-button">Participate</a>
+                                            </li>
+                                            <li class="humburger">
+                                                <a id="nav-expander" class="nav-expander bar" href="#">
+                                                    <div class="bar">
+                                                        <span class="dot1"></span>
+                                                        <span class="dot2"></span>
+                                                        <span class="dot3"></span>
+                                                        <span class="dot4"></span>
+                                                        <span class="dot5"></span>
+                                                        <span class="dot6"></span>
+                                                        <span class="dot7"></span>
+                                                        <span class="dot8"></span>
+                                                        <span class="dot9"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu End -->
+
+                    <!-- Canvas Mobile Menu start -->
+                    <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                        <div class="close-btn">
+                            <a id="nav-close2" class="nav-close">
+                                <div class="line">
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="nav-menu">
+                            <li class="menu-item-has-children current-menu-item">
+                                <a href="#home">Home</a>
+                             
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#htp">How to enroll</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#faq">FAQ's</a>
+                            </li>
+                            <li class="current-menu-item">
+                                <a href="{{route('winner')}}">Winner</a>
+                            </li>
+                            <li>
+                                <a href="{{route('participate')}}">Participate</a>
+                            </li>
+                
+                        </ul> <!-- //.nav-menu -->
+                    
+                    </nav>
+                    <!-- Canvas Menu end -->                     
+                </header>
+                <!--Header End-->
+            </div>
+            <!--Full width header End-->
+
+
 		<!-- Main content Start -->
         <div class="main-content">
 
@@ -66,7 +180,7 @@
                             <div class="row-table">
                                 <div class="col-cell header-logo">                                  
                                     <div class="logo-area">
-                                        <a href="index.php">
+                                        <a href="/">
                                             <img class="normal-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">  
                                             <img class="sticky-logo" src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="logo">
                                         </a>
@@ -84,7 +198,7 @@
                                                         <a href="{{route('index')}}/#about">About</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{route('index')}}/#htp">How to play</a>
+                                                        <a href="{{route('index')}}/#htp">How to enroll</a>
                                                     </li>
                                                     <li class="">
                                                         <a href="{{route('index')}}/#faq">FAQ's</a>
@@ -148,7 +262,7 @@
                                 <a href="{{route('index')}}/#about">About</a>
                             </li>
                             <li>
-                                <a href="{{route('index')}}/#htp">How to play</a>
+                                <a href="{{route('index')}}/#htp">How to enroll</a>
                             </li>
                             <li class="">
                                 <a href="{{route('index')}}/#faq">FAQ's</a>
@@ -172,14 +286,19 @@
 
             <!-- Banner Section Start -->
             <div class="rs-breadcrumbs img2">
-                <div class="container">
+            <div class="img d-none d-md-none d-lg-flex">
+                <img src="{{asset('new/assets/images/breadcrumbs/winner-prize.png')}}" class="" alt="Services">
+            </div>
+                <img src="{{asset('new/assets/images/breadcrumbs/mob-banner-winner.jpg')}}" class="d-block d-md-none d-lg-none img" alt="Services">
+                <img src="{{asset('new/assets/images/breadcrumbs/mobile-prize-tab.jpg')}}" class="d-none d-md-block d-lg-none img" alt="Services">
+                {{-- <div class="container">
                     <div class="breadcrumbs-inner">
-                        <h1 class="page-title">
-                            Winner
+                        <h3 class="text-white" style="position: relative">
+                            Shimmering Stars: Unveiling AGTian's Magnificent Top 30 Winners with Silver Treasures Await!
                             <span class="watermark">Winner</span>
-                        </h1>                       
+                        </h3>                       
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!-- Banner Section End -->
            
@@ -189,25 +308,84 @@
 
     
 
-            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80">
+            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 winner-tab">
                 <div class="container">
         
-                    <div class="row y-middle">
-                        <div class="col-lg-4 col-md-6 md-mb-30">
+                    <div class="row y-middle align-items-stretch">
+
+                        <div class="col-lg-3 col-md-6 md-mb-30 d-flex">
+                            <div class="services-item gold">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/gold.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">Grand Talent Champion</h4>
+                                        <p class="services-txt">
+                                            50 gram Silver coin 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 md-mb-30 d-flex">
                             <div class="services-item silver">
                                 <div class="services-wrap">
                                     <div class="services-icon">
                                         <img src="{{asset('new/assets/images/medals/silver.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">2. 1st Runner–up</h4>
+                                        <h4 class="title">Remarkable Talent Finalists</h4>
                                         <p class="services-txt">
-                                            When the competition is over, the 1st Runner-Up should be announced. 
+                                            30 Gram silver coin 
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-3 col-md-6 md-mb-30  d-flex">
+                            <div class="services-item bronze">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/bronze.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">Outstanding Talent Finalists</h4>
+                                        <p class="services-txt">
+                                            20 Gram silver coin
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 d-flex">
+                            <div class="services-item bronze">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/consolation.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">AGT Elite Showcase</h4>
+                                        <p class="services-txt">
+                                            10 Gram silver coin
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            {{-- <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 d-block d-md-none">
+                <div class="container">
+        
+                    <div class="row y-middle">
+
                         <div class="col-lg-4 col-md-6 md-mb-30">
                             <div class="services-item gold">
                                 <div class="services-wrap">
@@ -215,14 +393,31 @@
                                         <img src="{{asset('new/assets/images/medals/gold.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">1. Winner</h4>
+                                        <h4 class="title">1st Winner </h4>
                                         <p class="services-txt">
-                                            When the competition is over, the winner should be announced. 
+                                            50 gram Silver coin 
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6 md-mb-30">
+                            <div class="services-item silver">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/silver.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">1st two Runner up </h4>
+                                        <p class="services-txt">
+                                            30 Gram silver coin 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-lg-4 col-md-6">
                             <div class="services-item bronze">
                                 <div class="services-wrap">
@@ -230,9 +425,9 @@
                                         <img src="{{asset('new/assets/images/medals/bronze.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">3. 2nd Runner-Up</h4>
+                                        <h4 class="title">2nd Three Runner up </h4>
                                         <p class="services-txt">
-                                            When the competition is over, the 2nd Runner-Up should be announced. 
+                                            20 Gram silver coin
                                         </p>
                                     </div>
                                 </div>
@@ -240,7 +435,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Pricing Section End -->
 
             <!-- Blog Section End -->
@@ -252,7 +447,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="align-self-xxl-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
+                        <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-sm-right">
                            
                                 <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
                            
@@ -261,7 +456,7 @@
                             <div class="row">
                                
                                     {{-- <h3 class="footer-title">Address</h3> --}}
-                                    <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
+                                    <div class="textwidget">Be a part of our company's remarkable 50 years journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
                                 </div>
 
 

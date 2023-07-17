@@ -91,6 +91,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
 });
 
 Route::get('/', [Indexcontroller::class, 'index'])->name('index');
+Route::get('/agtian', [Indexcontroller::class, 'agt'])->name('agt');
+
 Route::get('/participate',[Indexcontroller::class, 'participate'])->name('participate');
 Route::post('/insertvideo',[Indexcontroller::class, 'insertvideo'])->name('insertvideo');
 Route::get('/videostatus/{id}', [Indexcontroller::class, 'updatevideo'])->name('update');

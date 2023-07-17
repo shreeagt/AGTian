@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png"> -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('new/assets/images/ajantaone-logo.png')}}">  
         <!-- Bootstrap v4.4.1 css -->
 
         <link rel="stylesheet" type="text/css" href="new/assets/css/bootstrap.min.css">
@@ -98,7 +98,8 @@
         <div id="pre-load">
            <div id="loader" class="loader">
                <div class="loader-container">
-                   <div class='loader-icon'><img src="{{asset('new/assets/images/ajanta-logo.png')}}" alt="agtian"></div>
+                   {{-- <div class='loader-icon'><img src="{{asset('new/assets/images/ajanta-logo.png')}}" alt="agtian"></div> --}}
+                   <div class='loader-icon'><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt="agtian"></div>
                </div>
            </div>              
        </div>
@@ -138,7 +139,7 @@
                                                         <a href="{{route('index')}}/#about">About</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{route('index')}}/#htp">How to play</a>
+                                                        <a href="{{route('index')}}/#htp">How to enroll</a>
                                                     </li>
                                                     <li class="">
                                                         <a href="{{route('index')}}/#faq">FAQ's</a>
@@ -203,7 +204,7 @@
                                 <a href="{{route('index')}}/#about">About</a>
                             </li>
                             <li>
-                                <a href="{{route('index')}}/#htp">How to play</a>
+                                <a href="{{route('index')}}/#htp">How to enroll</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="{{route('index')}}/#faq">FAQ's</a>
@@ -268,9 +269,8 @@
                                 </h1>                       
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6"> 
                             <div class="contact-wrap mb-60">
-                                <div id="form-messages"></div>
                                 <form id="contact-form" method="post" action="{{route('insertvideo')}}" enctype="multipart/form-data">
                                 @csrf
                                 <fieldset>
@@ -285,9 +285,7 @@
                                         <input class="form-control" type="text" id="city" name="city" placeholder="City" required="">
                                     </div>
                                     <div class="col-lg-12 mb-30">
-                                    
                                         <div class="drop-zone">
-                                        <input type="hidden" name="myfile" value="myfile">
                                         <input type="hidden" name="myfile" value="myfile">
                                         <span class="drop-zone__prompt">Drop file here or click to upload</span>
                                         <input type="file" name="video_path" class="drop-zone__input">
@@ -326,18 +324,13 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="align-self-xxl-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-right">
-                           
-                                <a href="index.php"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
-                            
+                        <div class="align-self-center col-lg-4 col-md-12 col-sm-12 md-mb-10 text-sm-right">
+                                <a href="/"><img src="{{asset('new/assets/images/ajantaone-logo.png')}}" alt=""></a>
                         </div>
                         <div class="col-lg-8">
-
                             <div class="row">
-                               
-                                        <h3 class="footer-title"></h3>
-                                        <div class="textwidget">Be a part of our company's remarkable 50-year journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
-                                    
+                                <h3 class="footer-title"></h3>
+                                <div class="textwidget">Be a part of our company's remarkable 50 years journey and seize the opportunity to showcase your talent by participating in this inspiring contest!</div>
                                 </div>
                             </div>
                         </div>
@@ -354,26 +347,6 @@
         </div>
         <!-- End scrollUp  -->
 
-
-        <!-- Search Modal Start -->
-        <div class="modal fade search-modal" id="searchModal" tabindex="-1">
-            <button type="button" class="close" data-bs-dismiss="modal">
-                <span class="flaticon-cross"></span>
-            </button>
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="search-block clearfix">
-                        <form>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Search Here..." type="text">
-                                <button type="submit" value="Search"><i class="flaticon-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Search Modal End -->
 
         <!-- modernizr js -->
         <script src="new/assets/js/modernizr-2.8.3.min.js"></script>
@@ -482,7 +455,7 @@
       const form = document.querySelector('#contact-form');
       const fileInput = document.querySelector('.drop-zone__input');
       const allowedExtensions = ['mp4', 'avi', 'mov']; // Allowed video file extensions
-      const maxSizeInBytes = 10 * 1024 * 1024; // 10MB
+      const maxSizeInBytes = 100 * 1024 * 1024; // 100MB
   
       form.addEventListener('submit', (event) => {
         event.preventDefault(); // Prevent the default form submission
@@ -505,7 +478,7 @@
   
         // Check the file size
         if (file.size > maxSizeInBytes) {
-          alert('File size exceeds the limit of 10MB.');
+          alert('File size exceeds the limit of 100MB.');
           return;
         }
   

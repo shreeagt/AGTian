@@ -191,12 +191,25 @@
         -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
+
+    .text-sm-right{
+        text-align: right;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     .hidden-md {
         display: none !important;
     }
+
+    .rs-about.style2 .left-side {
+        position: absolute;
+        width: 284px;
+        max-width: 348px;
+        top: 19px;
+        left: 1%;
+    }
+
     .home-blue .swiper-container .swiper-slide .height-ctrl {
         height: auto;
         display: block;
@@ -248,7 +261,7 @@
     .rs-pricing.style2 .price-animation .price-animate,
     .full-width-header .rs-header.header-style3 #rs_click__id,
     .full-width-header .rs-header .expand-btn-inner ul .btn-quote .quote-button {
-        display: none;
+        /* display: none; */
     }
     .full-width-header .rs-header .menu-area .logo-area img {
         max-width: 80px;
@@ -330,10 +343,12 @@
         margin: 0 0px 30px;
     }
     .rs-banner.banner-home-style4 .content-wrap .year {
-        font-size: 70px;
+        /* font-size: 70px; */
+        font-size: 40px;
     }
     .rs-banner.banner-home-style4 .content-wrap .music {
-        font-size: 130px;
+        /* font-size: 130px; */
+        font-size: 100px;
         line-height: 1.2;
     }
     .rs-videos.about-video {
@@ -457,11 +472,13 @@
         margin-top: 12px;
     }
     .rs-banner.banner-home-style4 .content-wrap .music {
-        font-size: 110px;
+        /* font-size: 110px; */
+        font-size: 80px;
         line-height: 1.2;
     }
     .rs-banner.banner-home-style4 .content-wrap .year {
-        font-size: 55px;
+        /* font-size: 55px; */
+        font-size: 30px;
     }
     .rs-videos.about-video {
         padding: 190px 0px 190px 0px;
@@ -730,9 +747,8 @@
         font-size: 14px;
     }
     .rs-faq .faq-content .accordion .card .card-header .card-link {
-        padding: 20px 15px 0 15px;
+        padding: 20px 44px 0 15px;
         font-size: 14px;
-      
     }
     .rs-contact.home-style1.faq-home-style .contact-widget {
         padding: 63px 25px 42px 25px;
@@ -772,11 +788,13 @@
         margin: 40px 0px 0px 0px;
     }
     .rs-banner.banner-home-style4 .content-wrap .music {
-        font-size: 70px;
+        /* font-size: 70px; */
+        font-size: 44px;
         line-height: 1.2;
     }
     .rs-banner.banner-home-style4 .content-wrap .year {
-        font-size: 40px;
+        /* font-size: 40px; */
+        font-size: 25px;
     }
     .rs-banner.banner-home-style4 .content-wrap {
         padding: 172px 0 150px;
@@ -864,6 +882,21 @@
     }
     .rs-contact.home-style3 .map-canvas .address-main .address-box {
         padding: 35px 30px 50px 48px;
+    }
+
+    .rs-videos.about-video {
+        background-size: contain;
+    }
+
+    .rs-banner.banner-home-style4 .content-wrap .event_counter2 .banner-counter5 .coming-soon-part2 .time_circles div + div span:before {
+        left: -6px;
+        top: 30%;
+    }
+
+    .rs-banner.banner-home-style4 .content-wrap .event_counter2 .banner-counter5 .coming-soon-part2 .time_circles div + div span:after {
+    
+        left: -6px;
+        top: 75%;
     }
 }
 .rs-team.style1 .team-item .team-inner-wrap .images-wrap .team-content {

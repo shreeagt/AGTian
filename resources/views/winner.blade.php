@@ -308,33 +308,19 @@
 
     
 
-            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 d-none d-md-block">
+            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 winner-tab">
                 <div class="container">
         
-                    <div class="row y-middle">
-                        <div class="col-lg-4 col-md-6 md-mb-30">
-                            <div class="services-item silver">
-                                <div class="services-wrap">
-                                    <div class="services-icon">
-                                        <img src="{{asset('new/assets/images/medals/silver.png')}}" alt="Services">
-                                    </div>
-                                    <div class="services-text">
-                                        <h4 class="title">1st two Runner up </h4>
-                                        <p class="services-txt">
-                                            30 Gram silver coin 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 md-mb-30">
+                    <div class="row y-middle align-items-stretch">
+
+                        <div class="col-lg-3 col-md-6 md-mb-30 d-flex">
                             <div class="services-item gold">
                                 <div class="services-wrap">
                                     <div class="services-icon">
                                         <img src="{{asset('new/assets/images/medals/gold.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">1st Winner </h4>
+                                        <h4 class="title">Grand Talent Champion</h4>
                                         <p class="services-txt">
                                             50 gram Silver coin 
                                         </p>
@@ -342,14 +328,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+
+                        <div class="col-lg-3 col-md-6 md-mb-30 d-flex">
+                            <div class="services-item silver">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/silver.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">Remarkable Talent Finalists</h4>
+                                        <p class="services-txt">
+                                            30 Gram silver coin 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 md-mb-30  d-flex">
                             <div class="services-item bronze">
                                 <div class="services-wrap">
                                     <div class="services-icon">
                                         <img src="{{asset('new/assets/images/medals/bronze.png')}}" alt="Services">
                                     </div>
                                     <div class="services-text">
-                                        <h4 class="title">2nd Three Runner up </h4>
+                                        <h4 class="title">Outstanding Talent Finalists</h4>
                                         <p class="services-txt">
                                             20 Gram silver coin
                                         </p>
@@ -357,12 +360,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-3 col-md-6 d-flex">
+                            <div class="services-item bronze">
+                                <div class="services-wrap">
+                                    <div class="services-icon">
+                                        <img src="{{asset('new/assets/images/medals/consolation.png')}}" alt="Services">
+                                    </div>
+                                    <div class="services-text">
+                                        <h4 class="title">AGT Elite Showcase</h4>
+                                        <p class="services-txt">
+                                            10 Gram silver coin
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             
-            <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 d-block d-md-none">
+            {{-- <div class="rs-services style1 bg1 pt-110 pb-60 md-pt-75 md-pb-80 d-block d-md-none">
                 <div class="container">
         
                     <div class="row y-middle">
@@ -416,7 +435,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Pricing Section End -->
 
             <!-- Blog Section End -->

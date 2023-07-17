@@ -3178,8 +3178,18 @@ body .search-modal .close:hover {
   color: #0a0a0a;
   margin-bottom: 18px;
 }
+
+.winner-tab.rs-services.style1 .services-item .services-wrap .services-text .title {
+  color: #ffffff;
+}
 .rs-services.style1 .services-item .services-wrap .services-text .services-txt {
   margin: 0;
+}
+
+.winner-tab.rs-services.style1 .services-item .services-wrap .services-text .services-txt {
+  margin: 0;
+  font-weight: 600;
+  color:#ffffff;
 }
 .rs-services.style1 .services-item:hover {
   background-image: linear-gradient(60deg, #05106d 0%, #3749db 100%);
@@ -3188,33 +3198,41 @@ body .search-modal .close:hover {
 }
 
 .rs-services.style1 .services-item.silver{
-  background:#C0C0C0;
-  min-height: 650px;
+  background:#1E146E;
+  /* background:url('/new/assets/images/medals/medal_background.png'); */
+  /* min-height: 650px; */
 }
 
 .rs-services.style1 .services-item.gold{
-  background:#FFD700;
-  min-height: 650px;
+  background:#1E146E;
+  /* background:url('/new/assets/images/medals/medal_background.png'); */
+  /* min-height: 650px; */
 }
 
 .rs-services.style1 .services-item.bronze{
-  background:#CD7F32 ;
-  min-height: 650px;
+  background:#1E146E ;
+  /* background:url('/new/assets/images/medals/medal_background.png'); */
+  /* min-height: 650px; */
 }
 
 .rs-services.style1 .services-item.gold:hover {
-  background-image:none;
+  /* background:url('/new/assets/images/medals/medal_background.png');
+  color: #000000; */
 }
 .rs-services.style1 .services-item.silver:hover {
-  background-image:none;
+  /* background:url('/new/assets/images/medals/medal_background.png');
+  color: #000000; */
 }
 .rs-services.style1 .services-item.bronze:hover {
-  background-image:none;
+  /* background:url('/new/assets/images/medals/medal_background.png');
+  color: #000000; */
 }
 
 .rs-services.style1 .services-item:hover .services-wrap {
   transform: translateY(-10px);
 }
+
+
 .rs-services.style1 .services-item:hover .services-wrap .services-text .services-txt,
 .rs-services.style1 .services-item:hover .services-wrap .services-text .title {
   color: #ffffff;
@@ -3374,6 +3392,8 @@ body .search-modal .close:hover {
   opacity: 1;
   background-position: 100% 100%;
 }
+
+
 .rs-services.style3 .services-item:hover .services-content .services-txt,
 .rs-services.style3 .services-item:hover .services-content .services-text .title {
   color: #ffffff;

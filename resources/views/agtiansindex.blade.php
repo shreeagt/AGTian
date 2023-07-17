@@ -39,6 +39,29 @@
         <link rel="stylesheet" type="text/css" href="{{asset('new/assets/css/responsive.css')}}">
         
     </head>
+
+    <style>
+        @keyframes firework {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.firework-animation {
+  animation-name: firework;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+    </style>
     <body class="defult-home">
         
         <div class="offwrap"></div>
@@ -211,8 +234,12 @@
                                     <div class="banner-counter5">
                                         <div class="timecounter-inner">
                                             <div class="coming-soon-part2">
-                                                <div class="coming-soon-text">    
-                                                    <div data-animation-in="slideInLeft" data-animation-out="animate-out fadeOut" class="CountDownTimer" data-date="07/07/2023 09:00"> </div>
+                                                <div class="coming-soon-text ">    
+                                                    <div id="countdown" data-animation-in="slideInLeft" data-animation-out="animate-out fadeOut" class="CountDownTimer" data-date="7/18/2023 17:00"> </div>
+                                                    {{-- <div id="message" style="display: none;">Competition has started!</div> --}}
+                                                    <div id="message" style="display: none;" class="sec-title">
+                                                        <span id="startMessage" class="title title2 title3 text-middle title4">Time's up! Let the talent show begin! Upload your videos and let your brilliance illuminate Ajanta Got Talent! </span>
+                                                      </div>
                                                 </div>                                                        
                                             </div>
                                         </div>
@@ -545,6 +572,47 @@
         <script src="{{asset('new/assets/js/contact.form.js')}}"></script>
         <!-- main js -->
         <script src="{{asset('new/assets/js/main.js')}}"></script>
+
+  
+        <script>
+// Get the countdown element
+const countdownElement = document.getElementById('countdown');
+
+// Get the message element
+const messageElement = document.getElementById('message');
+
+// Get the start message element
+const startMessageElement = document.getElementById('startMessage');
+
+// Get the target date from the data-date attribute
+const targetDate = new Date(countdownElement.dataset.date).getTime();
+
+// Function to check if countdown has ended
+function checkCountdown() {
+  // Get the current date and time
+  const now = new Date().getTime();
+
+  // Check if the countdown has ended
+  if (now >= targetDate) {
+    // Hide the countdown element
+    countdownElement.style.display = 'none';
+
+    // Show the message element
+    messageElement.style.display = 'block';
+
+    // Add firework animation class to the start message
+    startMessageElement.classList.add('firework-animation');
+  }
+}
+
+// Call the checkCountdown function immediately
+checkCountdown();
+
+// Check if the countdown has ended every second
+const countdown = setInterval(checkCountdown, 1000);
+          </script>
+
+ 
 
     </body>
 </html>

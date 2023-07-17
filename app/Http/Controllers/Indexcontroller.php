@@ -17,6 +17,10 @@ class Indexcontroller extends Controller
     {
         return view('agtiansindex');
     }
+    public function agt()
+    {
+        return view('agtiansindex2');
+    }
     public function participate()
     {
         return view ('participate');

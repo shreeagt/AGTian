@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png"> -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('new/assets/images/ajantaone-logo.png')}}">  
         <!-- Bootstrap v4.4.1 css -->
 
         <link rel="stylesheet" type="text/css" href="new/assets/css/bootstrap.min.css">

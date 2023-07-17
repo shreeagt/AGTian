@@ -388,7 +388,7 @@
                                             </div>
                                             <div id="collapseFour" class="collapse" data-bs-parent="#accordion" style="">
                                                 <div class="card-body">
-                                                    We recommend keeping your talent video within a maximum duration of 5 minutes to ensure fairness and efficiency during the evaluation process.
+                                                    We recommend keeping your talent video within a maximum duration of 2 minutes to ensure fairness and efficiency during the evaluation process.
                                                 </div>
                                             </div>
                                         </div> 

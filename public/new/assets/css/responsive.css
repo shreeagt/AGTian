@@ -747,9 +747,8 @@
         font-size: 14px;
     }
     .rs-faq .faq-content .accordion .card .card-header .card-link {
-        padding: 20px 15px 0 15px;
+        padding: 20px 44px 0 15px;
         font-size: 14px;
-      
     }
     .rs-contact.home-style1.faq-home-style .contact-widget {
         padding: 63px 25px 42px 25px;
@@ -887,6 +886,17 @@
 
     .rs-videos.about-video {
         background-size: contain;
+    }
+
+    .rs-banner.banner-home-style4 .content-wrap .event_counter2 .banner-counter5 .coming-soon-part2 .time_circles div + div span:before {
+        left: -6px;
+        top: 30%;
+    }
+
+    .rs-banner.banner-home-style4 .content-wrap .event_counter2 .banner-counter5 .coming-soon-part2 .time_circles div + div span:after {
+    
+        left: -6px;
+        top: 75%;
     }
 }
 .rs-team.style1 .team-item .team-inner-wrap .images-wrap .team-content {

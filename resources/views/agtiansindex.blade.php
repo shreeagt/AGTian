@@ -47,7 +47,7 @@
     opacity: 1;
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.1);
     opacity: 0.8;
   }
   100% {
@@ -60,6 +60,17 @@
   animation-name: firework;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+#message.sec-title .title.title2:before {
+    content: none;
+}
+
+span#startMessage {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-left: 60px;
+    display: inline-block;
 }
     </style>
     <body class="defult-home">

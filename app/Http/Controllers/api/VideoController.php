@@ -12,9 +12,7 @@ class VideoController extends Controller {
         $user = User::where('email', $empid)->first();
     
         // Check if the user exists and is an RSM
-        if (in_array($user->designer, ['REGIONAL SALES MANAGER', 'SR. REGIONAL SALES MANAGER'])) {
-            DB::connection()->enableQueryLog();
-            $queries = DB::getQueryLog();
+        if (in_array($user->designation, ['REGIONAL SALES MANAGER', 'SR. REGIONAL SALES MANAGER'])) {
 
             $videos = DB::table('video')
             ->select('video.*')
@@ -22,7 +20,7 @@ class VideoController extends Controller {
                 $join->on('users.email', '=', 'video.empid');
             })
             ->where('users.rsmid', '=', $user->email)
-            ->get();
+	    ->get();
             return response()->json(['data' => $videos, 'message' => 'Videos found', 'status' => true]);
         }
         else{

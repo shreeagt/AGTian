@@ -23,11 +23,7 @@ use App\Http\Controllers\api\Status3Controller;
 //     return $request->user();
 // });
 
-Route::get('/videos/{id}', [VideoController::class, 'show'])->name('video.show');
+Route::get('/videos/{empid}', [VideoController::class, 'show'])->name('video.show');
 
 Route::get('/videos/{id}/approve/{authorityid}',  [VideoController::class, 'approve']);
 Route::get('/videos/{id}/reject/{authorityid}', [VideoController::class, 'reject']);
-Route::get('/status2/{id}/approve/{authorityid}', [Status2Controller::class, 'approvevideo'])->name('status2.approve');
-Route::get('/status2/{id}/reject/{authorityid}', [Status2Controller::class, 'rejectvideo'])->name('status2.reject');
-Route::get('/status3/{id}/approve/{authorityid}', [Status3Controller::class, 'statusapprove'])->name('status3.approve');
-Route::get('/status3/{id}/reject/{authorityid}', [Status3Controller::class, 'statusreject'])->name('status3.reject');

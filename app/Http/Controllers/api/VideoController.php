@@ -13,13 +13,15 @@ class VideoController extends Controller {
     
         // Check if the user exists and is an RSM
         if (in_array($user->designer, ['REGIONAL SALES MANAGER', 'SR. REGIONAL SALES MANAGER'])) {
-       
+            DB::connection()->enableQueryLog();
+            $queries = DB::getQueryLog();
+
             $videos = DB::table('video')
             ->select('video.*')
             ->join('users', function ($join) use ($user) {
-                $join->on('users.email', '=', 'video.empid')
-                    ->where('users.rsmid', '=', $user->email);
+                $join->on('users.email', '=', 'video.empid');
             })
+            ->where('users.rsmid', '=', $user->email)
             ->get();
             return response()->json(['data' => $videos, 'message' => 'Videos found', 'status' => true]);
         }
